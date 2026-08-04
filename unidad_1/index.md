@@ -55,6 +55,17 @@ espacios fundamentales de una matriz y culmina en las caracterizaciones de
 invertibilidad. Los laboratorios incluyen ejercicios con el nivel y tamaño de
 las matrices utilizadas en la PC1.
 
+## Cuarto bloque: C8-C9
+
+1. [Espacios vectoriales reales, conjuntos afines y suma directa](07_espacios_vectoriales_afines_suma_directa.md)
+2. [Laboratorio de espacios afines y suma directa](07_laboratorio_espacios_suma_directa.ipynb)
+3. [Coordenadas y cambio de base](08_coordenadas_cambio_base.md)
+4. [Laboratorio simbólico de cambio de base](08_laboratorio_cambio_base.ipynb)
+
+Este bloque generaliza a espacios vectoriales reales las propiedades ya
+estudiadas en $\mathbb R^n$. La Unidad 1 cierra con coordenadas y cambio de
+base. Los números complejos se reservan para la Unidad 2.
+
 ## Convenciones
 
 - Los vectores se escriben como columnas cuando participan en productos

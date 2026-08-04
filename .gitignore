@@ -29,6 +29,10 @@
 !/unidad_1/05_nucleo_imagen_rango.md
 !/unidad_1/06_determinante_invertibilidad.md
 !/unidad_1/06_laboratorio_determinante.ipynb
+!/unidad_1/07_espacios_vectoriales_afines_suma_directa.md
+!/unidad_1/07_laboratorio_espacios_suma_directa.ipynb
+!/unidad_1/08_coordenadas_cambio_base.md
+!/unidad_1/08_laboratorio_cambio_base.ipynb
 
 # Salidas locales del libro y entornos virtuales.
 /_build/

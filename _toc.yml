@@ -14,3 +14,7 @@ chapters:
       - file: unidad_1/05_nucleo_imagen_rango
       - file: unidad_1/06_determinante_invertibilidad
       - file: unidad_1/06_laboratorio_determinante
+      - file: unidad_1/07_espacios_vectoriales_afines_suma_directa
+      - file: unidad_1/07_laboratorio_espacios_suma_directa
+      - file: unidad_1/08_coordenadas_cambio_base
+      - file: unidad_1/08_laboratorio_cambio_base
