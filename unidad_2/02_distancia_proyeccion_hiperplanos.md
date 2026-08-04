@@ -108,6 +108,15 @@ Por tanto, $p$ es el punto más cercano. $\square$
 La desigualdad expresa que el ángulo entre $x-p$ y cualquier dirección
 $y-p$ que entra en $C$ desde $p$ es obtuso o recto.
 
+```{figure} figuras/proyeccion_convexa.svg
+:name: fig-proyeccion-convexa
+:width: 90%
+
+Caracterización de la proyección sobre un conjunto convexo cerrado. En el
+punto más cercano, todas las direcciones hacia el conjunto forman con el
+residuo un ángulo mayor o igual que $90^\circ$.
+```
+
 ## 3. Caso particular: subespacios
 
 Todo subespacio de $\mathbb R^n$ es cerrado y convexo. En este caso, la
@@ -139,6 +148,16 @@ $$
 
 para valores positivos y negativos de $t$; por tanto el producto interno es
 cero. La implicación inversa se sigue del Teorema 2.3. $\square$
+
+```{figure} figuras/proyeccion_subespacio.svg
+:name: fig-proyeccion-subespacio
+:width: 86%
+
+En un subespacio se puede avanzar desde $p$ en ambas direcciones. Por eso la
+desigualdad del caso convexo se convierte en la igualdad
+$\langle x-p,w\rangle=0$ para todo $w\in W$: el residuo es ortogonal a todo
+el subespacio.
+```
 
 ### Corolario 3.2. Mejor aproximación y Pitágoras
 
@@ -323,6 +342,15 @@ $$
 
 de donde se obtiene $\lambda$. La distancia es
 $\|x-p\|=|\lambda|\|u\|$. $\square$
+
+```{figure} figuras/proyeccion_hiperplano.svg
+:name: fig-proyeccion-hiperplano
+:width: 90%
+
+La corrección que lleva $x$ al hiperplano sigue su dirección normal. El
+segmento entre $x$ y $P_H(x)$ es perpendicular a todas las direcciones del
+hiperplano.
+```
 
 Si el hiperplano se escribe como
 $\langle y,u\rangle+b=0$, basta tomar $c=-b$.

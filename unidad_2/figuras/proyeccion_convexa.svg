@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Proyección sobre un conjunto convexo</title>
+  <desc id="desc">El residuo x menos p forma un ángulo obtuso o recto con toda dirección y menos p que entra al conjunto.</desc>
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#be2d37"/></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2a805c"/></marker>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#17202a} .math{font-family:"Times New Roman",serif;font-style:italic}
+    </style>
+  </defs>
+  <rect width="900" height="520" fill="white"/>
+  <path d="M75 330 Q65 210 135 125 Q250 55 390 96 Q505 128 532 235 Q510 350 392 392 Q210 435 75 330Z" fill="#e8f2f8" stroke="#14578c" stroke-width="4"/>
+  <text x="210" y="245" font-size="29" fill="#14578c">C convexo cerrado</text>
+  <circle cx="520" cy="210" r="7" fill="#14578c"/>
+  <text x="468" y="183" font-size="25"><tspan class="math">p</tspan> = P<tspan baseline-shift="sub" font-size="17">C</tspan>(<tspan class="math">x</tspan>)</text>
+  <circle cx="775" cy="87" r="7" fill="#be2d37"/>
+  <text x="795" y="86" font-size="28" class="math">x</text>
+  <circle cx="180" cy="354" r="6" fill="#17202a"/>
+  <text x="105" y="390" font-size="25"><tspan class="math">y</tspan> ∈ C</text>
+  <line x1="520" y1="210" x2="768" y2="91" stroke="#be2d37" stroke-width="5" marker-end="url(#arrow-red)"/>
+  <text x="650" y="123" font-size="25" fill="#be2d37" class="math">x − p</text>
+  <line x1="520" y1="210" x2="187" y2="351" stroke="#2a805c" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <text x="318" y="320" font-size="25" fill="#2a805c" class="math">y − p</text>
+  <path d="M585 179 A76 76 0 1 0 450 240" fill="none" stroke="#17202a" stroke-width="3"/>
+  <path d="M585 179 A76 76 0 1 0 450 240 L520 210Z" fill="#f9d98c" opacity="0.45"/>
+  <text x="458" y="111" font-size="27" font-weight="600">θ ≥ 90°</text>
+  <rect x="45" y="442" width="810" height="58" rx="10" fill="#fff" stroke="#14578c" stroke-width="2"/>
+  <text x="450" y="480" text-anchor="middle" font-size="25"><tspan class="math">p</tspan> = P<tspan baseline-shift="sub" font-size="17">C</tspan>(<tspan class="math">x</tspan>)  ⇔  ⟨<tspan class="math">x − p</tspan>, <tspan class="math">y − p</tspan>⟩ ≤ 0 para todo <tspan class="math">y</tspan> ∈ C</text>
+</svg>

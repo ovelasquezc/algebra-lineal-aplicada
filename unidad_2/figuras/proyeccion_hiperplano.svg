@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="560" viewBox="0 0 950 560" role="img" aria-labelledby="title desc">
+  <title id="title">Proyección ortogonal sobre un hiperplano</title>
+  <desc id="desc">El residuo desde la proyección p hasta x es perpendicular al hiperplano y paralelo a su normal u.</desc>
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#be2d37"/></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2a805c"/></marker>
+    <style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#17202a}.math{font-family:"Times New Roman",serif;font-style:italic}</style>
+  </defs>
+  <rect width="950" height="560" fill="white"/>
+  <line x1="90" y1="120" x2="820" y2="410" stroke="#14578c" stroke-width="7"/>
+  <text x="505" y="400" font-size="24" fill="#14578c"><tspan class="math">H</tspan> = {<tspan class="math">y</tspan> : ⟨<tspan class="math">y</tspan>, <tspan class="math">u</tspan>⟩ = <tspan class="math">c</tspan>}</text>
+  <circle cx="450" cy="263" r="7" fill="#14578c"/>
+  <text x="335" y="290" font-size="25"><tspan class="math">p</tspan> = P<tspan baseline-shift="sub" font-size="17">H</tspan>(<tspan class="math">x</tspan>)</text>
+  <circle cx="520" cy="88" r="7" fill="#be2d37"/><text x="540" y="88" font-size="28" class="math">x</text>
+  <line x1="453" y1="256" x2="517" y2="96" stroke="#be2d37" stroke-width="5" marker-end="url(#arrow-red)"/>
+  <text x="535" y="190" font-size="25" fill="#be2d37"><tspan class="math">x − p</tspan> = λ<tspan class="math">u</tspan></text>
+  <line x1="450" y1="263" x2="485" y2="175" stroke="#2a805c" stroke-width="4" marker-end="url(#arrow-green)"/>
+  <text x="455" y="180" font-size="25" fill="#2a805c" class="math">u</text>
+  <path d="M478 274L489 246L461 235" fill="none" stroke="#17202a" stroke-width="3"/>
+  <text x="487" y="309" font-size="25">90°</text>
+  <line x1="575" y1="110" x2="510" y2="272" stroke="#6c757d" stroke-width="2.5" marker-start="url(#arrow-red)" marker-end="url(#arrow-red)" opacity="0.75"/>
+  <text x="595" y="245" font-size="23">dist(<tspan class="math">x</tspan>, <tspan class="math">H</tspan>)</text>
+  <rect x="55" y="445" width="840" height="92" rx="10" fill="#fff" stroke="#14578c" stroke-width="2"/>
+  <text x="475" y="478" text-anchor="middle" font-size="23"><tspan class="math">x − p</tspan> ⟂ H y <tspan class="math">x − p</tspan> es paralelo al vector normal <tspan class="math">u</tspan>.</text>
+  <text x="475" y="516" text-anchor="middle" font-size="23"><tspan class="math">p</tspan> = <tspan class="math">x</tspan> − (⟨<tspan class="math">x</tspan>,<tspan class="math">u</tspan>⟩−<tspan class="math">c</tspan>)/‖<tspan class="math">u</tspan>‖² <tspan class="math">u</tspan>  dist(<tspan class="math">x</tspan>,<tspan class="math">H</tspan>) = |⟨<tspan class="math">x</tspan>,<tspan class="math">u</tspan>⟩−<tspan class="math">c</tspan>|/‖<tspan class="math">u</tspan>‖</text>
+</svg>
