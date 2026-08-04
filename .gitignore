@@ -37,6 +37,12 @@
 !/unidad_1/09_preparacion_pc1.md
 !/unidad_1/09_laboratorio_preparacion_pc1.ipynb
 
+!/unidad_2/
+/unidad_2/*
+!/unidad_2/index.md
+!/unidad_2/01_ortogonalidad_gram_schmidt.md
+!/unidad_2/01_laboratorio_gram_schmidt.ipynb
+
 # Salidas locales del libro y entornos virtuales.
 /_build/
 /.jupyter_cache/

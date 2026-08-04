@@ -21,3 +21,7 @@ chapters:
       - file: unidad_1/09_repaso_teorico_pc1
       - file: unidad_1/09_preparacion_pc1
       - file: unidad_1/09_laboratorio_preparacion_pc1
+  - file: unidad_2/index
+    sections:
+      - file: unidad_2/01_ortogonalidad_gram_schmidt
+      - file: unidad_2/01_laboratorio_gram_schmidt
