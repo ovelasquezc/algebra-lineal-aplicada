@@ -51,10 +51,20 @@ el espacio de columnas, deriva las ecuaciones normales y las aplica a matrices
 de diseño para ajustes lineales y polinomiales. Se estudian también el residuo,
 la unicidad de los coeficientes y el coeficiente de determinación $R^2$.
 
+## Cuarto bloque: C13
+
+1. [Aproximación de Fourier y compresión de imágenes](04_fourier_compresion.md)
+2. [Laboratorio de Fourier y DCT](04_laboratorio_fourier_dct.ipynb)
+
+Este bloque introduce solamente los números complejos necesarios para Fourier.
+Las series y la transformada discreta se presentan como coordenadas y
+proyecciones en bases ortonormales. La DCT bidimensional permite interpretar
+la compresión de imágenes como selección de componentes de frecuencia.
+
 ## Convenciones
 
-- En los primeros bloques trabajamos exclusivamente sobre los números reales.
+- En los tres primeros bloques trabajamos exclusivamente sobre los números
+  reales; los complejos aparecen recién en C13 para Fourier.
 - Los productos internos se denotan por $\langle u,v\rangle$.
+- En espacios complejos usamos la convención lineal en la primera entrada.
 - Los cálculos simbólicos se mantienen exactos siempre que sea posible.
-- Los números complejos se introducirán únicamente al llegar al análisis de
-  Fourier.
