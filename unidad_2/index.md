@@ -41,6 +41,16 @@ se estudia la caracterización sobre conjuntos convexos cerrados y luego se
 especializa a subespacios, conjuntos afines e hiperplanos. Las ecuaciones
 normales y el ajuste de datos se reservan para C12.
 
+## Tercer bloque: C12
+
+1. [Mínimos cuadrados y ajuste de datos](03_minimos_cuadrados_ajuste.md)
+2. [Laboratorio de mínimos cuadrados](03_laboratorio_minimos_cuadrados.ipynb)
+
+Este bloque interpreta los sistemas incompatibles mediante la proyección sobre
+el espacio de columnas, deriva las ecuaciones normales y las aplica a matrices
+de diseño para ajustes lineales y polinomiales. Se estudian también el residuo,
+la unicidad de los coeficientes y el coeficiente de determinación $R^2$.
+
 ## Convenciones
 
 - En los primeros bloques trabajamos exclusivamente sobre los números reales.

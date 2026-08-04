@@ -27,3 +27,5 @@ chapters:
       - file: unidad_2/01_laboratorio_gram_schmidt
       - file: unidad_2/02_distancia_proyeccion_hiperplanos
       - file: unidad_2/02_laboratorio_proyecciones
+      - file: unidad_2/03_minimos_cuadrados_ajuste
+      - file: unidad_2/03_laboratorio_minimos_cuadrados
