@@ -57,6 +57,12 @@
 !/unidad_2/figuras/proyeccion_subespacio.svg
 !/unidad_2/figuras/proyeccion_hiperplano.svg
 
+!/unidad_3/
+/unidad_3/*
+!/unidad_3/index.md
+!/unidad_3/01_transformaciones_lineales_matrices.md
+!/unidad_3/01_laboratorio_transformaciones.ipynb
+
 # Salidas locales del libro y entornos virtuales.
 /_build/
 /.jupyter_cache/

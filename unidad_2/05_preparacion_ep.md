@@ -97,8 +97,8 @@ $$
 Ortonormaliza, en el orden indicado,
 
 $$
-v_1=(1,1,0),qquad
-v_2=(1,0,1),qquad
+v_1=(1,1,0),\qquad
+v_2=(1,0,1),\qquad
 v_3=(0,1,1).
 $$
 

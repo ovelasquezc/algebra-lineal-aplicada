@@ -34,3 +34,7 @@ chapters:
       - file: unidad_2/05_repaso_teorico_ep
       - file: unidad_2/05_preparacion_ep
       - file: unidad_2/05_laboratorio_preparacion_ep
+  - file: unidad_3/index
+    sections:
+      - file: unidad_3/01_transformaciones_lineales_matrices
+      - file: unidad_3/01_laboratorio_transformaciones
