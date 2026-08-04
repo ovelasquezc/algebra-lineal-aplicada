@@ -1,0 +1,8 @@
+format: jb-book
+root: index
+chapters:
+  - file: unidad_1/index
+    sections:
+      - file: unidad_1/01_vectores_geometria_matrices
+      - file: unidad_1/01_laboratorio_vectores_matrices
+      - file: unidad_1/01_repaso_trigonometria

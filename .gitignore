@@ -1,0 +1,28 @@
+# Este repositorio publica solamente el libro. El resto de esta carpeta es
+# material histórico o de trabajo y permanece fuera de Git.
+/*
+
+!/.gitignore
+!/README.md
+!/_config.yml
+!/_toc.yml
+!/index.md
+!/requirements.txt
+!/UPlogo.png
+
+!/.github/
+/.github/*
+!/.github/workflows/
+!/.github/workflows/deploy-pages.yml
+
+!/unidad_1/
+/unidad_1/*
+!/unidad_1/index.md
+!/unidad_1/01_vectores_geometria_matrices.md
+!/unidad_1/01_laboratorio_vectores_matrices.ipynb
+!/unidad_1/01_repaso_trigonometria.ipynb
+
+# Salidas locales del libro y entornos virtuales.
+/_build/
+/.jupyter_cache/
+/.venv/

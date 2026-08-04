@@ -1,0 +1,48 @@
+title: Álgebra Lineal Aplicada
+author: Universidad del Pacífico
+copyright: "2026"
+logo: UPlogo.png
+
+execute:
+  execute_notebooks: force
+  timeout: 120
+  allow_errors: false
+
+# La carpeta de trabajo contiene fuentes históricas que no forman parte del
+# libro. Se excluyen también de la fase de descubrimiento de Sphinx, además de
+# quedar fuera de Git mediante .gitignore.
+exclude_patterns:
+  - README.md
+  - material_interno/**
+  - ALA_DCT.ipynb
+  - AlgebraLinealAplicada20261S01C1.ipynb
+  - Algebra_lineal_simbolica.ipynb
+  - Forma_cuadratica_diagonalizacion.ipynb
+  - Graph_clustering_ejemplo.ipynb
+  - Numeros_complejos.ipynb
+  - RREF.ipynb
+  - Valores_singulares.ipynb
+  - cuaderno_cambio_base_simbolico.ipynb
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - dollarmath
+    - linkify
+    - substitution
+
+sphinx:
+  config:
+    language: es
+
+html:
+  favicon: UPlogo.png
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+
+repository:
+  url: https://github.com/ovelasquezc/algebra-lineal-aplicada
+  branch: main
+  path_to_book: .
