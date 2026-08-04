@@ -1,10 +1,18 @@
 # Preparación para la PC1
 
+```{admonition} Tres recursos complementarios
+:class: note
+Comienza por el [repaso teórico](09_repaso_teorico_pc1.md). Después resuelve
+esta guía y el simulacro por escrito. Utiliza el
+[laboratorio computacional](09_laboratorio_preparacion_pc1.ipynb) solamente
+para comprobar resultados.
+```
+
 ## Propósito
 
-Este material sirve para integrar la Unidad 1 antes de la primera práctica
-calificada. Los ejercicios son nuevos o han sido reformulados; no anticipan las
-preguntas de la evaluación.
+Este material de práctica escrita sirve para integrar la Unidad 1 antes de la
+primera práctica calificada. Los ejercicios son nuevos o han sido
+reformulados; no anticipan las preguntas de la evaluación.
 
 La preparación tiene tres niveles:
 

@@ -68,12 +68,14 @@ base. Los números complejos se reservan para la Unidad 2.
 
 ## Preparación para la PC1
 
-1. [Guía, ejercicios graduados y simulacro](09_preparacion_pc1.md)
-2. [Laboratorio de comprobación computacional](09_laboratorio_preparacion_pc1.ipynb)
+1. [Repaso teórico de la Unidad 1](09_repaso_teorico_pc1.md)
+2. [Guía, ejercicios graduados y simulacro](09_preparacion_pc1.md)
+3. [Laboratorio de comprobación computacional](09_laboratorio_preparacion_pc1.ipynb)
 
-La guía cubre toda la Unidad 1 e incluye una clave breve de control. El
-laboratorio sirve para verificar los cálculos después de haber intentado los
-problemas manualmente.
+El repaso teórico reúne definiciones, teoremas, pruebas e ideas de prueba. La
+guía cubre toda la Unidad 1 e incluye una clave breve de control. El laboratorio
+sirve para verificar los cálculos después de haber intentado los problemas
+manualmente.
 
 ## Convenciones
 
