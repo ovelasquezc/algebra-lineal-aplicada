@@ -61,6 +61,18 @@ Las series y la transformada discreta se presentan como coordenadas y
 proyecciones en bases ortonormales. La DCT bidimensional permite interpretar
 la compresión de imágenes como selección de componentes de frecuencia.
 
+## Preparación para el Examen Parcial
+
+1. [Repaso teórico para el EP](05_repaso_teorico_ep.md)
+2. [Guía de preparación y simulacro](05_preparacion_ep.md)
+3. [Laboratorio de comprobación](05_laboratorio_preparacion_ep.ipynb)
+
+La preparación integra las Unidades 1 y 2. La síntesis organiza definiciones,
+teoremas y pruebas; la guía reúne ejercicios escritos y un simulacro; el
+laboratorio se reserva para verificar cálculos después de resolverlos a mano.
+Las transformaciones lineales y la teoría espectral permanecen fuera del EP
+porque corresponden a la Unidad 3.
+
 ## Convenciones
 
 - En los tres primeros bloques trabajamos exclusivamente sobre los números
