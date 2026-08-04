@@ -66,6 +66,15 @@ Este bloque generaliza a espacios vectoriales reales las propiedades ya
 estudiadas en $\mathbb R^n$. La Unidad 1 cierra con coordenadas y cambio de
 base. Los números complejos se reservan para la Unidad 2.
 
+## Preparación para la PC1
+
+1. [Guía, ejercicios graduados y simulacro](09_preparacion_pc1.md)
+2. [Laboratorio de comprobación computacional](09_laboratorio_preparacion_pc1.ipynb)
+
+La guía cubre toda la Unidad 1 e incluye una clave breve de control. El
+laboratorio sirve para verificar los cálculos después de haber intentado los
+problemas manualmente.
+
 ## Convenciones
 
 - Los vectores se escriben como columnas cuando participan en productos
