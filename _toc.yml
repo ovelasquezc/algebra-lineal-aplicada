@@ -9,3 +9,8 @@ chapters:
       - file: unidad_1/02_eliminacion_gauss_jordan
       - file: unidad_1/02_laboratorio_gauss_jordan
       - file: unidad_1/03_combinacion_independencia
+      - file: unidad_1/04_subespacios_bases_dimension
+      - file: unidad_1/04_laboratorio_subespacios_nucleo_imagen
+      - file: unidad_1/05_nucleo_imagen_rango
+      - file: unidad_1/06_determinante_invertibilidad
+      - file: unidad_1/06_laboratorio_determinante

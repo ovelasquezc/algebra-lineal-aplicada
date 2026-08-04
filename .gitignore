@@ -24,6 +24,11 @@
 !/unidad_1/02_eliminacion_gauss_jordan.md
 !/unidad_1/02_laboratorio_gauss_jordan.ipynb
 !/unidad_1/03_combinacion_independencia.md
+!/unidad_1/04_subespacios_bases_dimension.md
+!/unidad_1/04_laboratorio_subespacios_nucleo_imagen.ipynb
+!/unidad_1/05_nucleo_imagen_rango.md
+!/unidad_1/06_determinante_invertibilidad.md
+!/unidad_1/06_laboratorio_determinante.ipynb
 
 # Salidas locales del libro y entornos virtuales.
 /_build/
