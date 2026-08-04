@@ -99,13 +99,6 @@ un contraejemplo; escribir solamente V o F no es suficiente.
 11. Si $(a+b)\perp(a-b)$, entonces $a\perp b$.
 12. Una base de $\mathcal P_3$ debe tener cuatro polinomios.
 
-```{admonition} Error frecuente con sumas y diferencias
-:class: warning
-De
-$(a+b)\cdot(a-b)=0$ se obtiene $\|a\|^2-\|b\|^2=0$. La conclusión es
-$\|a\|=\|b\|$, no $a\perp b$.
-```
-
 ## 4. Ejercicios graduados
 
 ### A. Geometría y norma
