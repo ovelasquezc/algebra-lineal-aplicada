@@ -31,6 +31,16 @@ se utiliza como herramienta para ortogonalizar. La caracterización de la
 proyección como solución de un problema de distancia se desarrollará en el
 siguiente bloque.
 
+## Segundo bloque: C11
+
+1. [Distancia, proyección ortogonal e hiperplanos](02_distancia_proyeccion_hiperplanos.md)
+2. [Laboratorio de proyecciones](02_laboratorio_proyecciones.ipynb)
+
+Este bloque formula la proyección como un problema de mínima distancia. Primero
+se estudia la caracterización sobre conjuntos convexos cerrados y luego se
+especializa a subespacios, conjuntos afines e hiperplanos. Las ecuaciones
+normales y el ajuste de datos se reservan para C12.
+
 ## Convenciones
 
 - En los primeros bloques trabajamos exclusivamente sobre los números reales.

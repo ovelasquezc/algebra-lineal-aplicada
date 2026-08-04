@@ -25,3 +25,5 @@ chapters:
     sections:
       - file: unidad_2/01_ortogonalidad_gram_schmidt
       - file: unidad_2/01_laboratorio_gram_schmidt
+      - file: unidad_2/02_distancia_proyeccion_hiperplanos
+      - file: unidad_2/02_laboratorio_proyecciones

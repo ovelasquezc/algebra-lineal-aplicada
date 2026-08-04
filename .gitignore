@@ -42,6 +42,8 @@
 !/unidad_2/index.md
 !/unidad_2/01_ortogonalidad_gram_schmidt.md
 !/unidad_2/01_laboratorio_gram_schmidt.ipynb
+!/unidad_2/02_distancia_proyeccion_hiperplanos.md
+!/unidad_2/02_laboratorio_proyecciones.ipynb
 
 # Salidas locales del libro y entornos virtuales.
 /_build/
