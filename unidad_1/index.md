@@ -15,7 +15,7 @@ parte de una sesión o extenderse durante varias sesiones.
 | Sesiones | Tema | Recursos |
 |---|---|---|
 | C1-C2 | Vectores, geometría de $\mathbb R^n$, matrices y sistemas sencillos | Hoja de teoría, laboratorio y repaso opcional de trigonometría |
-| C3 | Operaciones elementales y eliminación de Gauss-Jordan | Presentación y ejercicios |
+| C3 | Operaciones elementales y eliminación de Gauss-Jordan | Presentación y laboratorio |
 | C4 | Combinación e independencia lineal | Presentación y ejercicios |
 | C5 | Subespacios, bases y dimensión | Presentación y ejercicios |
 | C6-C7 | Núcleo, imagen, rango, rango-nulidad, determinante e invertibilidad | Presentación y práctica para la PC1 |
@@ -31,6 +31,16 @@ parte de una sesión o extenderse durante varias sesiones.
 El repaso de trigonometría sirve como apoyo para interpretar el ángulo entre
 vectores. Se reutilizará en la Unidad 2 antes de introducir números complejos y
 análisis de Fourier.
+
+## Segundo bloque: C3-C4
+
+1. [Eliminación de Gauss–Jordan](02_eliminacion_gauss_jordan.md)
+2. [Laboratorio de eliminación de Gauss–Jordan](02_laboratorio_gauss_jordan.ipynb)
+3. [Combinación e independencia lineal](03_combinacion_independencia.md)
+
+El laboratorio usa aritmética exacta para distinguir ceros matemáticos de
+errores de redondeo y desarrolla sistemas con solución única, infinitas
+soluciones, incompatibilidad y parámetros.
 
 ## Convenciones
 

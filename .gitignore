@@ -21,6 +21,9 @@
 !/unidad_1/01_vectores_geometria_matrices.md
 !/unidad_1/01_laboratorio_vectores_matrices.ipynb
 !/unidad_1/01_repaso_trigonometria.ipynb
+!/unidad_1/02_eliminacion_gauss_jordan.md
+!/unidad_1/02_laboratorio_gauss_jordan.ipynb
+!/unidad_1/03_combinacion_independencia.md
 
 # Salidas locales del libro y entornos virtuales.
 /_build/

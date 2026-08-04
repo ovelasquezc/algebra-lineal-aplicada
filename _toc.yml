@@ -6,3 +6,6 @@ chapters:
       - file: unidad_1/01_vectores_geometria_matrices
       - file: unidad_1/01_laboratorio_vectores_matrices
       - file: unidad_1/01_repaso_trigonometria
+      - file: unidad_1/02_eliminacion_gauss_jordan
+      - file: unidad_1/02_laboratorio_gauss_jordan
+      - file: unidad_1/03_combinacion_independencia
