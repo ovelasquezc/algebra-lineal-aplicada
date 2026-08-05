@@ -93,6 +93,7 @@
 /unidad_4/figuras/*
 !/unidad_4/figuras/ojo_svd.jpg
 !/unidad_4/figuras/doscomponentes.png
+!/unidad_4/figuras/svd_vs_pca_afin.svg
 
 # Salidas locales del libro y entornos virtuales.
 /_build/

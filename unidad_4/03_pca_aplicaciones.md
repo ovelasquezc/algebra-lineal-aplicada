@@ -4,14 +4,88 @@
 
 Al finalizar esta sesión, podrás:
 
-1. centrar un conjunto de datos y construir su matriz de covarianza;
-2. probar la equivalencia entre minimizar distancias y maximizar varianza;
-3. calcular componentes, coordenadas principales y reconstrucciones;
-4. proyectar datos de $\mathbb R^3$ sobre un plano principal;
-5. interpretar una aproximación de rango bajo mediante factores latentes;
-6. usar esos factores para formular una predicción sencilla de calificaciones.
+1. distinguir una aproximación SVD de un subespacio afín obtenido mediante PCA;
+2. centrar un conjunto de datos y construir su matriz de covarianza;
+3. probar la equivalencia entre minimizar distancias y maximizar varianza;
+4. calcular componentes, coordenadas principales y reconstrucciones;
+5. proyectar datos de $\mathbb R^3$ sobre un plano principal;
+6. interpretar una aproximación de rango bajo mediante factores latentes;
+7. usar esos factores para formular una predicción sencilla de calificaciones.
 
-## 1. Centrado de los datos
+## 1. SVD sin centrar frente a PCA
+
+Consideremos una nube de puntos de $\mathbb R^2$ alargada y situada
+principalmente en un cuadrante, lejos del origen. Hay dos problemas distintos.
+
+### 1.1. SVD de rango uno: una recta que pasa por el origen
+
+Si las observaciones son las filas de $X$, la aproximación de rango uno sin
+centrar resuelve
+
+$$
+\min_{\dim V=1}\sum_{i=1}^N\operatorname{dist}(x_i,V)^2,
+$$
+
+donde $V=\operatorname{span}\{v\}$ es un **subespacio lineal**. Toda recta
+admisible debe pasar por el origen. La solución es
+
+$$
+V=\operatorname{span}\{v_1\},
+$$
+
+con $v_1$ el primer vector singular derecho de $X$. Cuando la nube está lejos
+del origen, su posición puede influir fuertemente en esta dirección.
+
+### 1.2. PCA: una recta afín que pasa por la media
+
+Primero buscamos el punto que minimiza la suma de distancias cuadradas a las
+observaciones:
+
+$$
+\boxed{
+\bar x=\arg\min_{a\in\mathbb R^d}\sum_{i=1}^N\|x_i-a\|^2.
+}
+$$
+
+**Prueba.** Para cualquier $a$,
+
+$$
+\sum_i\|x_i-a\|^2
+=\sum_i\|x_i-\bar x\|^2+N\|a-\bar x\|^2.
+$$
+
+El segundo término es no negativo y solo se anula cuando $a=\bar x$.
+$\square$
+
+Después centramos $z_i=x_i-\bar x$ y calculamos la mejor dirección $v_1$ para
+la matriz centrada $Z$. Al regresar a las coordenadas originales obtenemos
+
+$$
+\boxed{A_1=\bar x+\operatorname{span}\{v_1\}.}
+$$
+
+$A_1$ es un **subespacio afín**: pasa por la media y, salvo que la media esté
+alineada de manera especial, no pasa por el origen.
+
+```{figure} figuras/svd_vs_pca_afin.svg
+---
+name: svd-frente-pca-afin
+width: 100%
+---
+La SVD aplicada directamente a los datos busca una recta lineal obligada a
+pasar por el origen. PCA centra la nube y produce una recta afín que pasa por
+la media. El laboratorio calcula y compara ambas rectas para los mismos datos.
+```
+
+```{admonition} La diferencia esencial
+:class: important
+SVD no es sinónimo de PCA. PCA puede calcularse mediante la SVD de la matriz
+centrada, pero incluye una traslación: primero resta la media y finalmente la
+vuelve a sumar. Así transforma un problema de subespacios lineales para $Z$
+en un problema de subespacios afines para $X$.
+```
+
+## 2. Centrado de los datos
 
 Sean $x_1,\ldots,x_N\in\mathbb R^d$ observaciones y
 
@@ -31,8 +105,8 @@ $$
 Z=\begin{pmatrix}z_1^T\\ \vdots\\z_N^T\end{pmatrix}.
 $$
 
-Sus columnas tienen media cero. Con la convención poblacional, la matriz de
-covarianza es
+Sus columnas tienen media cero. Con las observaciones dispuestas en filas, la
+normalización de la matriz de productos cruzados da la matriz de covarianza:
 
 $$
 \boxed{C=\frac1N Z^TZ.}
@@ -42,18 +116,30 @@ Si se usa la convención muestral, se reemplaza $N$ por $N-1$. Este cambio
 modifica los valores propios por un factor común, pero no las direcciones
 principales.
 
+La orientación de la matriz importa:
+
+- si las observaciones son filas, $Z\in\mathbb R^{N\times d}$ y la covarianza
+  entre variables es $Z^TZ/N\in\mathbb R^{d\times d}$;
+- si las observaciones se colocan como columnas,
+  $Z\in\mathbb R^{d\times N}$ y la misma covarianza se escribe $ZZ^T/N$.
+
+Con observaciones en filas, $ZZ^T/N$ es en cambio una matriz de Gram entre
+observaciones. Comparte los valores propios no nulos, salvo la normalización,
+con $Z^TZ/N$, pero sus vectores propios viven en $\mathbb R^N$ y no son las
+direcciones principales del espacio de variables $\mathbb R^d$.
+
 ```{admonition} El centrado es esencial
 :class: important
 Sin centrar, $\|Xv\|^2/N$ mide un segundo momento respecto del origen. Después
 de centrar, $\|Zv\|^2/N$ es la varianza de las coordenadas proyectadas.
 ```
 
-## 2. Distancia y varianza: dos formulaciones equivalentes
+## 3. Distancia y varianza: dos formulaciones equivalentes
 
 Sea $V\subseteq\mathbb R^d$ un subespacio de dimensión $k$, con base
 ortonormal $Q=[q_1\ \cdots\ q_k]$, y sea $P_V=QQ^T$.
 
-### Teorema 2.1. Equivalencia distancia--varianza
+### Teorema 3.1. Equivalencia distancia--varianza
 
 **Enunciado.** Para datos centrados, minimizar
 
@@ -101,7 +187,7 @@ $$
 Por tanto, disminuir la suma de distancias cuadradas equivale a aumentar la
 varianza total de las coordenadas proyectadas. $\square$
 
-## 3. Componentes principales
+## 4. Componentes principales
 
 Sea
 
@@ -124,7 +210,7 @@ $$
 \lambda_j=\frac{\sigma_j^2}{N}.
 $$
 
-### Definición 3.1. Direcciones y componentes principales
+### Definición 4.1. Direcciones y componentes principales
 
 Las primeras $k$ **direcciones principales** son
 $v_1,\ldots,v_k$. Las **coordenadas principales** de las observaciones son
@@ -145,7 +231,7 @@ $$
 Es necesario sumar nuevamente la media porque PCA se calculó a partir de los
 datos centrados.
 
-### Teorema 3.2. Caracterización variacional
+### Teorema 4.2. Caracterización variacional
 
 **Enunciado.** La primera dirección principal resuelve
 
@@ -164,7 +250,7 @@ Cada paso maximiza la varianza que todavía puede representarse en una
 dirección ortogonal a las anteriores. Esta es la interpretación del proceso
 de optimización secuencial o *greedy*.
 
-## 4. Varianza explicada y selección de dimensión
+## 5. Varianza explicada y selección de dimensión
 
 La varianza de la componente $j$ es $\lambda_j$. Por ello,
 
@@ -181,7 +267,7 @@ es la proporción de varianza explicada por las primeras $k$ componentes. Un
 criterio práctico consiste en elegir el menor $k$ que alcance un umbral
 prefijado. El umbral depende del propósito del análisis.
 
-## 5. Proyección de puntos de $\mathbb R^3$ sobre un plano
+## 6. Proyección de puntos de $\mathbb R^3$ sobre un plano
 
 Para observaciones tridimensionales, las dos primeras direcciones principales
 generan el plano
@@ -212,10 +298,11 @@ $$
 t_i=V_2^Tz_i\in\mathbb R^2.
 $$
 
-## 6. Películas y componentes latentes
+## 7. Películas y componentes latentes
 
-Consideremos siete personas y cinco películas. Las filas representan personas
-y las columnas, películas:
+El siguiente ejemplo está adaptado de
+[Wegner (2024)](../referencias.md). Consideremos siete personas y cinco
+películas. Las filas representan personas y las columnas, películas:
 
 | | Alien | Casablanca | Star Wars | Titanic | The Matrix |
 |---|---:|---:|---:|---:|---:|
@@ -259,7 +346,7 @@ dominantes separan aproximadamente preferencias por ciencia ficción (SF) y
 por romance (RM).
 ```
 
-### 6.1. Espacios de personas y películas
+### 7.1. Espacios de personas y películas
 
 Sea $R\cong\mathbb R^7$ el espacio de personas y
 $M\cong\mathbb R^5$ el espacio de películas. La calificación se modela como
@@ -292,7 +379,7 @@ calificaciones para conservar su escala y obtener factores de usuarios y
 películas.
 ```
 
-## 7. Filtrado colaborativo: una nueva persona
+## 8. Filtrado colaborativo: una nueva persona
 
 Hannah ha calificado *Alien* con $4$ y *Casablanca* con $1$. Si
 $(x,y)$ son sus coordenadas en el modelo de dos factores, las columnas de
@@ -326,7 +413,7 @@ $$
 El modelo predice una calificación cercana a $4$. Es una predicción fuera de
 la muestra: se estimó usando coordenadas latentes obtenidas de otras personas.
 
-## 8. Qué debe interpretarse con cautela
+## 9. Qué debe interpretarse con cautela
 
 1. El signo de cada componente puede invertirse sin cambiar el modelo.
 2. Componentes con valores propios repetidos no determinan direcciones únicas.
@@ -337,7 +424,7 @@ la muestra: se estimó usando coordenadas latentes obtenidas de otras personas.
 5. Los factores latentes sugieren interpretaciones, pero la SVD no les asigna
    nombres ni significado causal.
 
-## 9. Errores frecuentes
+## 10. Errores frecuentes
 
 1. Calcular PCA sin restar la media y llamar varianza al segundo momento.
 2. Confundir las direcciones $V_k$ con las coordenadas $ZV_k$.
