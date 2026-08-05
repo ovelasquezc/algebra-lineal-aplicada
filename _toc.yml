@@ -42,3 +42,12 @@ chapters:
       - file: unidad_3/02_laboratorio_adjuntos_invariantes
       - file: unidad_3/03_valores_vectores_propios
       - file: unidad_3/03_laboratorio_valores_propios
+      - file: unidad_3/04_diagonalizacion_descomposicion_espectral
+      - file: unidad_3/04_laboratorio_diagonalizacion
+      - file: unidad_3/05_autoadjuntos_teorema_espectral
+      - file: unidad_3/05_laboratorio_teorema_espectral
+      - file: unidad_3/06_formas_cuadraticas
+      - file: unidad_3/06_laboratorio_formas_cuadraticas
+      - file: unidad_3/07_repaso_teorico_pc2
+      - file: unidad_3/07_preparacion_pc2
+      - file: unidad_3/07_laboratorio_preparacion_pc2

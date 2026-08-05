@@ -20,7 +20,8 @@ laboratorio.
 | C17 | Valores y vectores propios; polinomio característico y multiplicidades | Hoja de teoría y laboratorio |
 | C18 | Diagonalización y descomposición espectral | Hoja de teoría y laboratorio |
 | C19 | Operadores autoadjuntos y matrices simétricas | Hoja de teoría y laboratorio |
-| C20 | Formas cuadráticas y cierre de la unidad | Hoja de teoría, laboratorio y preparación para la PC2 |
+| C20 | Formas cuadráticas y cierre de la unidad | Hoja de teoría y laboratorio |
+| Después de C20 | Preparación integral para la PC2 | Repaso teórico, problemas y laboratorio |
 
 ## Primer bloque: C14-C15
 
@@ -52,6 +53,49 @@ Este bloque interpreta los vectores propios como direcciones invariantes y
 desarrolla el cálculo del polinomio característico, los espacios propios y sus
 multiplicidades. También distingue el espectro real del complejo y prepara el
 criterio de diagonalización del bloque siguiente.
+
+## Cuarto bloque: C18
+
+1. [Diagonalización y descomposición espectral](04_diagonalizacion_descomposicion_espectral.md)
+2. [Laboratorio de diagonalización](04_laboratorio_diagonalizacion.ipynb)
+
+Este bloque caracteriza la diagonalización por semejanza, construye
+$A=PDP^{-1}$ y aplica la descomposición en espacios propios al cálculo de
+potencias, funciones matriciales y sistemas dinámicos. Los proyectores
+espectrales se presentan en general; su carácter ortogonal para operadores
+autoadjuntos se reserva para C19.
+
+## Quinto bloque: C19
+
+1. [Operadores autoadjuntos y teorema espectral](05_autoadjuntos_teorema_espectral.md)
+2. [Laboratorio del teorema espectral](05_laboratorio_teorema_espectral.ipynb)
+
+Este bloque demuestra que los operadores autoadjuntos tienen valores propios
+reales y espacios propios distintos ortogonales. El teorema espectral conduce
+a la diagonalización ortogonal o unitaria, a proyectores espectrales
+ortogonales y a las cotas del cociente de Rayleigh.
+
+## Sexto bloque: C20
+
+1. [Formas cuadráticas y clasificación por signo](06_formas_cuadraticas.md)
+2. [Laboratorio de formas cuadráticas](06_laboratorio_formas_cuadraticas.ipynb)
+
+Este bloque cierra la unidad construyendo la matriz simétrica de una forma
+cuadrática, reduciéndola a suma y diferencia de cuadrados y clasificándola
+mediante espectro, inercia y criterios de Sylvester. También conecta la
+positividad con matrices de Gram y optimización convexa.
+
+## Cierre de la unidad: preparación para la PC2
+
+1. [Repaso teórico para la PC2](07_repaso_teorico_pc2.md)
+2. [Guía de preparación para la PC2](07_preparacion_pc2.md)
+3. [Laboratorio de preparación para la PC2](07_laboratorio_preparacion_pc2.ipynb)
+
+El cierre tiene alcance acumulativo sobre toda la Unidad 3. La hoja teórica
+separa enunciados, pruebas e ideas de prueba; la guía combina conceptos,
+cálculo, demostraciones y un simulacro; el laboratorio permite verificar los
+cálculos después de resolverlos por escrito. La SVD se reserva para la Unidad
+4.
 
 ## Convenciones
 
