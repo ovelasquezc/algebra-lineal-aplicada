@@ -4,38 +4,49 @@
 
 Al finalizar este bloque, podrás:
 
-1. interpretar valores y vectores propios como direcciones invariantes;
+1. definir valores y vectores propios de una matriz e interpretarlos como
+   direcciones invariantes;
 2. calcular el polinomio característico y el espectro de una matriz;
 3. obtener una base de cada espacio propio;
 4. distinguir multiplicidad algebraica y multiplicidad geométrica;
 5. deducir propiedades espectrales de matrices semejantes y de polinomios en
-   un operador;
+   una matriz;
 6. reconocer qué cambia al trabajar sobre $\mathbb R$ o sobre $\mathbb C$.
 
-## 1. Direcciones que un operador no cambia
+## 1. Direcciones que una matriz no cambia
 
 ### Definición 1.1. Valor propio y vector propio
 
-Sea $T:V\to V$ un operador lineal sobre un espacio vectorial definido sobre
-$\mathbb K$. Un escalar $\lambda\in\mathbb K$ es un **valor propio** de $T$ si
-existe un vector $v\neq0$ tal que
+Sea $A\in\mathbb K^{n\times n}$. Un escalar $\lambda\in\mathbb K$ es un
+**valor propio** de $A$ si existe un vector $v\in\mathbb K^n$, $v\neq0$, tal
+que
 
 $$
-\boxed{T(v)=\lambda v.}
+\boxed{Av=\lambda v.}
 $$
 
-El vector $v$ se llama **vector propio** asociado a $\lambda$.
+El vector $v$ se llama **vector propio de $A$ asociado a $\lambda$**.
 
 ```{admonition} El vector propio no puede ser cero
 :class: warning
-La igualdad $T(0)=\lambda0$ se cumple para cualquier escalar. Exigir
-$v\neq0$ hace que la definición contenga información sobre el operador.
+La igualdad $A0=\lambda0$ se cumple para cualquier escalar. Exigir
+$v\neq0$ hace que la definición contenga información sobre la matriz.
 El valor propio sí puede ser cero.
+```
+
+```{admonition} Observación: formulación para operadores
+:class: note
+La misma definición tiene sentido para un operador lineal $T:V\to V$:
+$T(v)=\lambda v$ con $v\neq0$. En dimensión finita, una vez elegida una base,
+esta igualdad se representa mediante una matriz y vuelve a la definición
+anterior. La formulación con operadores permite además hablar de valores
+propios en espacios de dimensión infinita, por ejemplo en espacios de
+funciones, donde no existe una matriz finita que represente todo el operador.
 ```
 
 ### Interpretación geométrica
 
-La recta $\operatorname{span}\{v\}$ es invariante bajo $T$. Sobre $\mathbb R$:
+La recta $\operatorname{span}\{v\}$ es invariante bajo $A$. Sobre $\mathbb R$:
 
 - si $\lambda>1$, la dirección se estira;
 - si $0<\lambda<1$, se contrae;
@@ -69,27 +80,27 @@ Las dos rectas generadas por esos vectores son invariantes.
 
 ### Definición 2.1. Espacio propio
 
-Para un valor propio $\lambda$ de $T$, su **espacio propio** es
+Para un valor propio $\lambda$ de $A$, su **espacio propio** es
 
 $$
-E_\lambda(T)=\{v\in V:T(v)=\lambda v\}.
+E_\lambda(A)=\{v\in\mathbb K^n:Av=\lambda v\}.
 $$
 
-Como $T(v)=\lambda v$ equivale a $(T-\lambda I)v=0$,
+Como $Av=\lambda v$ equivale a $(A-\lambda I)v=0$,
 
 $$
-\boxed{E_\lambda(T)=\ker(T-\lambda I).}
+\boxed{E_\lambda(A)=\ker(A-\lambda I).}
 $$
 
-Por tanto, $E_\lambda(T)$ es un subespacio. Sus elementos no nulos son
+Por tanto, $E_\lambda(A)$ es un subespacio. Sus elementos no nulos son
 exactamente los vectores propios asociados a $\lambda$.
 
 ### Proposición 2.2. El espacio propio es invariante
 
-**Enunciado.** $E_\lambda(T)$ es invariante bajo $T$.
+**Enunciado.** $E_\lambda(A)$ es invariante bajo $A$.
 
-**Prueba.** Si $v\in E_\lambda(T)$, entonces $T(v)=\lambda v$, que también
-pertenece a $E_\lambda(T)$ porque este es un subespacio. $\square$
+**Prueba.** Si $v\in E_\lambda(A)$, entonces $Av=\lambda v$, que también
+pertenece a $E_\lambda(A)$ porque este es un subespacio. $\square$
 
 ## 3. Polinomio característico y espectro
 
@@ -318,7 +329,61 @@ $$
 
 Así, el cambio de base transporta también los espacios propios. $\square$
 
-### Proposición 6.3. Espectro y operaciones
+### Definición 6.3. Evaluación de un polinomio en una matriz
+
+Sea
+
+$$
+q(t)=a_0+a_1t+\cdots+a_mt^m
+$$
+
+un polinomio y sea $A\in\mathbb K^{n\times n}$. Definimos
+
+$$
+\boxed{
+q(A)=a_0I+a_1A+\cdots+a_mA^m,
+}
+$$
+
+donde $A^0=I$.
+
+```{admonition} Atención al término constante
+:class: important
+El término constante $a_0$ se convierte en $a_0I$, no en el escalar $a_0$ ni
+en una matriz que tenga $a_0$ en todas sus entradas. Así todos los sumandos
+de $q(A)$ son matrices de orden $n$.
+```
+
+### Ejemplo 6.4. Evaluación explícita
+
+Sean
+
+$$
+q(t)=2t^2-3t+5,
+\qquad
+A=\begin{pmatrix}1&1\\0&2\end{pmatrix}.
+$$
+
+Como
+
+$$
+A^2=\begin{pmatrix}1&3\\0&4\end{pmatrix},
+$$
+
+se obtiene
+
+$$
+\begin{aligned}
+q(A)
+&=2A^2-3A+5I\\
+&=2\begin{pmatrix}1&3\\0&4\end{pmatrix}
+-3\begin{pmatrix}1&1\\0&2\end{pmatrix}
++5\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
+&=\begin{pmatrix}4&3\\0&7\end{pmatrix}.
+\end{aligned}
+$$
+
+### Proposición 6.5. Espectro y operaciones
 
 **Enunciado.** Si $Av=\lambda v$ y $q$ es un polinomio, entonces
 
@@ -337,7 +402,7 @@ identidad para cualquier combinación lineal de potencias. Para la inversa,
 $Av=\lambda v$ y la invertibilidad implican $\lambda\neq0$; aplicar $A^{-1}$
 da $A^{-1}v=\lambda^{-1}v$. $\square$
 
-### Proposición 6.4. Invertibilidad, traza y determinante
+### Proposición 6.6. Invertibilidad, traza y determinante
 
 **Enunciado.** Contando valores propios complejos con multiplicidad:
 
@@ -359,7 +424,7 @@ coeficiente de $t^{n-1}$ con los obtenidos de $\det(tI-A)$ aparecen las
 fórmulas. La equivalencia de invertibilidad sigue de
 $0\in\sigma(A)\iff\det(A)=0$.
 
-### Consecuencia 6.5. Matrices triangulares
+### Consecuencia 6.7. Matrices triangulares
 
 Los valores propios de una matriz triangular son sus entradas diagonales,
 contando multiplicidades, porque
@@ -368,7 +433,7 @@ $$
 \chi_A(t)=\prod_{j=1}^n(t-a_{jj}).
 $$
 
-## 7. Polinomios que anulan una matriz
+## 7. El teorema de Cayley--Hamilton
 
 ### Teorema 7.1. Cayley–Hamilton
 
@@ -377,6 +442,9 @@ $$
 $$
 \boxed{\chi_A(A)=0.}
 $$
+
+Aquí $\chi_A(A)$ se interpreta mediante la Definición 6.3. En particular, el
+término constante de $\chi_A(t)$ multiplica a la matriz identidad.
 
 La demostración general requiere herramientas algebraicas adicionales y no
 presupone que la matriz sea diagonalizable. Aquí lo usaremos para reducir
@@ -414,7 +482,7 @@ Sea $\lambda$ un valor propio de $A$.
 4. Si $A$ es ortogonal o unitaria, entonces $|\lambda|=1$.
 
 **Prueba.** Las tres primeras afirmaciones se obtienen aplicando la
-Proposición 6.3 a los polinomios $t^2-t$, $t^2-1$ y $t^k$. Para la última, si
+Proposición 6.5 a los polinomios $t^2-t$, $t^2-1$ y $t^k$. Para la última, si
 $Av=\lambda v$, la preservación de la norma da
 $\|v\|=\|Av\|=|\lambda|\|v\|$; como $v\neq0$, $|\lambda|=1$. $\square$
 

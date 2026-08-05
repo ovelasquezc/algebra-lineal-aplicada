@@ -29,7 +29,11 @@ chapters:
       - file: unidad_2/02_laboratorio_proyecciones
       - file: unidad_2/03_minimos_cuadrados_ajuste
       - file: unidad_2/03_laboratorio_minimos_cuadrados
+      - file: unidad_2/04_numeros_complejos_espacios
+      - file: unidad_2/04_ejercicios_numeros_complejos
+      - file: unidad_2/04_laboratorio_numeros_complejos
       - file: unidad_2/04_fourier_compresion
+      - file: unidad_2/04_ejercicios_fourier
       - file: unidad_2/04_laboratorio_fourier_dct
       - file: unidad_2/05_repaso_teorico_ep
       - file: unidad_2/05_preparacion_ep

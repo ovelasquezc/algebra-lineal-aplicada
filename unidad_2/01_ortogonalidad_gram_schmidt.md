@@ -8,7 +8,9 @@ Al finalizar este tema, el estudiante podrá:
 2. distinguir conjuntos ortogonales de conjuntos ortonormales;
 3. obtener coordenadas en una base ortogonal;
 4. determinar propiedades básicas de un complemento ortogonal;
-5. construir bases ortogonales y ortonormales mediante Gram–Schmidt.
+5. construir bases ortogonales y ortonormales mediante Gram–Schmidt;
+6. distinguir, a nivel introductorio, un espacio con producto interno de un
+   espacio de Hilbert.
 
 ## 1. Producto interno
 
@@ -82,7 +84,36 @@ Las propiedades de esta norma —incluidas Cauchy–Schwarz y la desigualdad
 triangular— se establecieron en la Unidad 1. Aquí las usaremos en un espacio
 con producto interno general.
 
-### Definición 2.1. Vectores ortogonales
+### Definición 2.1. Espacio real con producto interno
+
+Un **espacio real con producto interno** es un espacio vectorial real $V$
+provisto de un producto interno. La norma y la distancia asociadas son
+
+$$
+\|u\|=\sqrt{\langle u,u\rangle},
+\qquad
+d(u,v)=\|u-v\|.
+$$
+
+Esta es la estructura en la que se definen ortogonalidad, ángulos y
+proyecciones. No se trata solamente de trabajar en $\mathbb R^n$: también son
+ejemplos los espacios de polinomios con productos internos integrales.
+
+```{admonition} Mención: espacios de Hilbert
+:class: note
+Una sucesión $(x_n)$ es **de Cauchy** si sus términos terminan siendo tan
+cercanos entre sí como se quiera. Un espacio con producto interno es un
+**espacio de Hilbert** si es completo para la norma inducida: toda sucesión de
+Cauchy converge a un elemento del propio espacio.
+
+Todo espacio con producto interno de dimensión finita es automáticamente de
+Hilbert. La completitud cobra importancia en dimensión infinita. Por ejemplo,
+$L^2([-\pi,\pi])$ es el espacio de Hilbert natural para formular Fourier con
+plena generalidad. En el curso usaremos las ideas geométricas de esta teoría,
+sin desarrollar sus aspectos analíticos.
+```
+
+### Definición 2.2. Vectores ortogonales
 
 Dos vectores $u,v\in V$ son **ortogonales**, y escribimos $u\perp v$, si
 
@@ -90,14 +121,14 @@ $$
 \langle u,v\rangle=0.
 $$
 
-### Definición 2.2. Conjuntos ortogonales y ortonormales
+### Definición 2.3. Conjuntos ortogonales y ortonormales
 
 Un conjunto de vectores no nulos $\{v_1,\ldots,v_r\}$ es:
 
 1. **ortogonal** si $\langle v_i,v_j\rangle=0$ para $i\neq j$;
 2. **ortonormal** si es ortogonal y $\|v_i\|=1$ para todo $i$.
 
-### Teorema 2.3. Pitágoras
+### Teorema 2.4. Pitágoras
 
 **Enunciado.** Si $u\perp v$, entonces
 
@@ -117,7 +148,7 @@ $$
 
 El término cruzado es cero porque $u\perp v$. $\square$
 
-### Teorema 2.4. Independencia de un conjunto ortogonal
+### Teorema 2.5. Independencia de un conjunto ortogonal
 
 **Enunciado.** Todo conjunto ortogonal de vectores no nulos es linealmente
 independiente.

@@ -4,135 +4,26 @@
 
 Al finalizar este tema, el estudiante podrá:
 
-1. operar con los elementos de números complejos necesarios para Fourier;
-2. interpretar los coeficientes de Fourier como coordenadas en una familia
+1. interpretar los coeficientes de Fourier como coordenadas en una familia
    ortonormal;
-3. reconocer las sumas parciales de Fourier como mejores aproximaciones;
-4. formular la transformada discreta de Fourier en una base ortonormal;
-5. interpretar la DCT bidimensional y la compresión como selección de
+2. demostrar que las sumas parciales de Fourier son las mejores
+   aproximaciones dentro de los polinomios trigonométricos;
+3. formular la transformada discreta de Fourier en una base ortonormal;
+4. interpretar la DCT bidimensional y la compresión como selección de
    componentes de frecuencia.
 
-## 1. Un repaso mínimo de números complejos
-
-### Definición 1.1. Forma cartesiana
-
-Un número complejo tiene la forma
-
-$$
-z=a+bi,
-\qquad a,b\in\mathbb R,
-\qquad i^2=-1.
-$$
-
-Su parte real, parte imaginaria, conjugado y módulo son
-
-$$
-\operatorname{Re}(z)=a,
-\qquad
-\operatorname{Im}(z)=b,
-\qquad
-\overline z=a-bi,
-\qquad
-|z|=\sqrt{a^2+b^2}.
-$$
-
-### Proposición 1.2. Propiedades del conjugado y el módulo
-
-**Enunciado.** Para $z,w\in\mathbb C$:
-
-1. $\overline{z+w}=\overline z+\overline w$;
-2. $\overline{zw}=\overline z\,\overline w$;
-3. $z\overline z=|z|^2$;
-4. $|zw|=|z||w|$;
-5. si $z\neq0$, entonces $z^{-1}=\overline z/|z|^2$.
-
-**Prueba.** Las primeras propiedades se verifican escribiendo
-$z=a+bi$ y $w=c+di$. La tercera es
-
-$$
-(a+bi)(a-bi)=a^2+b^2.
-$$
-
-La cuarta se obtiene conjugando el producto y la quinta al dividir la tercera
-igualdad entre $|z|^2$. $\square$
-
-### Teorema 1.3. Fórmula de Euler
-
-**Enunciado.** Para todo $\theta\in\mathbb R$,
-
-$$
-\boxed{e^{i\theta}=\cos\theta+i\sin\theta.}
-$$
-
-En particular,
-
-$$
-\overline{e^{i\theta}}=e^{-i\theta},
-\qquad
-|e^{i\theta}|=1.
-$$
-
-**Idea de prueba.** Al sustituir $i\theta$ en la serie de potencias de la
-exponencial, los términos pares forman la serie del coseno y los impares la
-del seno multiplicada por $i$.
-
-```{admonition} Por qué aparecen los complejos
-:class: important
-No introducimos números complejos como un tema aislado. Los usamos porque una
-oscilación de frecuencia $k$ puede escribirse de forma compacta como
-$e^{ikt}$ y porque la conjugación permite medir correctamente ángulos y
-longitudes.
+```{admonition} Prerrequisito
+:class: note
+Antes de continuar, revise
+[Números complejos y espacios con producto interno complejo](04_numeros_complejos_espacios.md).
+Allí se fijan la forma polar, la fórmula de Euler, los espacios vectoriales
+complejos y la convención del producto interno que se usa en este tema.
 ```
 
-## 2. Producto interno complejo
+## 1. Fourier como proyección
 
-En este curso adoptaremos la convención lineal en la primera entrada.
-
-### Definición 2.1. Producto interno hermitiano
-
-Para $x,y\in\mathbb C^n$,
-
-$$
-\boxed{
-\langle x,y\rangle
-=\sum_{j=1}^n x_j\overline{y_j}
-=y^*x,
-}
-$$
-
-donde $y^*=\overline y^{,T}$ es la transpuesta conjugada. Entonces
-
-$$
-\langle x,y\rangle=\overline{\langle y,x\rangle},
-\qquad
-\|x\|^2=\langle x,x\rangle=\sum_{j=1}^n|x_j|^2.
-$$
-
-### Teorema 2.2. Proyección con una familia ortonormal compleja
-
-**Enunciado.** Si $(u_1,\ldots,u_r)$ es una familia ortonormal y
-$W=\operatorname{span}\{u_1,\ldots,u_r\}$, entonces
-
-$$
-\boxed{
-P_W(x)=\sum_{j=1}^r\langle x,u_j\rangle u_j.
-}
-$$
-
-Además,
-
-$$
-\|x-P_W(x)\|^2
-=\|x\|^2-\sum_{j=1}^r|\langle x,u_j\rangle|^2.
-$$
-
-**Prueba.** La combinación pertenece a $W$. Al tomar producto interno del
-residuo con cada $u_k$, la ortonormalidad da cero. La segunda igualdad se
-obtiene por Pitágoras. $\square$
-
-## 3. Fourier como proyección
-
-Consideremos funciones complejas en $[-\pi,\pi]$ con producto interno
+Consideremos el espacio de Hilbert $L^2([-\pi,\pi],\mathbb C)$, formado por
+funciones de cuadrado integrable, con producto interno
 
 $$
 \langle f,g\rangle
@@ -140,7 +31,11 @@ $$
 f(t)\overline{g(t)}\,dt.
 $$
 
-### Teorema 3.1. Ortogonalidad de las exponenciales
+Para los ejemplos del curso basta pensar en funciones continuas por tramos. La
+formulación en $L^2$ permite aplicar el teorema de proyección; no
+desarrollaremos aquí los detalles analíticos de este espacio.
+
+### Teorema 1.1. Ortogonalidad de las exponenciales
 
 **Enunciado.** Las funciones
 
@@ -165,7 +60,7 @@ $$
 Si $k=m$, la integral vale $2\pi$. Si $k\neq m$, una primitiva muestra que
 los valores en ambos extremos se cancelan. $\square$
 
-### Definición 3.2. Polinomios trigonométricos
+### Definición 1.2. Polinomios trigonométricos
 
 El espacio de polinomios trigonométricos de orden $N$ es
 
@@ -176,7 +71,7 @@ $$
 
 Tiene dimensión $2N+1$.
 
-### Teorema 3.3. Suma parcial de Fourier
+### Teorema 1.3. Suma parcial de Fourier
 
 **Enunciado.** La proyección de $f$ sobre $\mathcal T_N$ es
 
@@ -198,27 +93,65 @@ $$
 Además,
 
 $$
-\|f-S_Nf\|
-=\min_{p\in\mathcal T_N}\|f-p\|,
-$$
-
-y
-
-$$
 \boxed{
 \|f-S_Nf\|^2
 =\|f\|^2-\sum_{k=-N}^{N}|c_k|^2.
 }
 $$
 
-**Prueba.** El Teorema 3.1 permite aplicar la fórmula de proyección del
-Teorema 2.2. La propiedad de mejor aproximación y la identidad del error se
-siguen del teorema de proyección y de Pitágoras. $\square$
+**Prueba.** El Teorema 1.1 permite aplicar la fórmula de proyección compleja
+del tema anterior. La identidad del error se obtiene por Pitágoras. $\square$
 
 Los coeficientes $c_k$ son coordenadas de $f$ en direcciones de frecuencia.
-El valor $|c_k|^2$ mide la energía capturada por la frecuencia $k$.
+El valor $|c_k|^2$ mide la contribución cuadrática de la frecuencia $k$.
 
-### Ejemplo 3.4. La función $f(t)=t$
+### Teorema 1.4. Mejor aproximación por polinomios trigonométricos
+
+**Enunciado.** Para todo $p\in\mathcal T_N$,
+
+$$
+\boxed{
+\|f-p\|^2
+=\|f-S_Nf\|^2+\|S_Nf-p\|^2.
+}
+$$
+
+En consecuencia,
+
+$$
+\boxed{
+\|f-S_Nf\|
+=\min_{p\in\mathcal T_N}\|f-p\|,
+}
+$$
+
+y la igualdad $\|f-p\|=\|f-S_Nf\|$ ocurre solamente cuando $p=S_Nf$.
+
+**Prueba.** Como $S_Nf$ es la proyección de $f$ sobre $\mathcal T_N$,
+
+$$
+f-S_Nf\perp\mathcal T_N.
+$$
+
+Para $p\in\mathcal T_N$, el vector $S_Nf-p$ también pertenece a
+$\mathcal T_N$. Por tanto, en la descomposición
+
+$$
+f-p=(f-S_Nf)+(S_Nf-p)
+$$
+
+los dos sumandos son ortogonales. Pitágoras da la identidad y muestra que el
+segundo término solo puede aumentar el error. $\square$
+
+```{admonition} Por qué la aproximación de Fourier es tan buena
+:class: important
+Entre **todos** los polinomios trigonométricos de orden a lo más $N$, la suma
+parcial $S_Nf$ es el único que produce el menor error en la norma cuadrática.
+No se escogen los coeficientes por ensayo: son las coordenadas de una
+proyección ortogonal.
+```
+
+### Ejemplo 1.5. La función $f(t)=t$
 
 En $[-\pi,\pi]$, se tiene $c_0=0$ y, para $k\neq0$,
 
@@ -236,7 +169,7 @@ $$
 
 La forma real aparece al reunir los términos de frecuencias $k$ y $-k$.
 
-## 4. Forma real de Fourier
+## 2. Forma real de Fourier
 
 Si $f$ toma valores reales, entonces
 
@@ -269,7 +202,7 @@ $$
 Fourier complejo y Fourier real son la misma proyección escrita en dos
 familias equivalentes: exponenciales complejas o senos y cosenos.
 
-### Ejemplo 4.1. Onda cuadrada
+### Ejemplo 2.1. Onda cuadrada
 
 Para la extensión periódica de
 
@@ -302,7 +235,7 @@ $$
 Cerca de los saltos aparece una sobreoscilación persistente conocida como
 fenómeno de Gibbs.
 
-## 5. Fourier discreto
+## 3. Fourier discreto
 
 Una señal digital con $M$ muestras es un vector
 $x=(x_0,\ldots,x_{M-1})\in\mathbb C^M$. Usamos el producto interno promedio
@@ -312,7 +245,7 @@ $$
 =\frac1M\sum_{n=0}^{M-1}x_n\overline{y_n}.
 $$
 
-### Teorema 5.1. Base discreta de Fourier
+### Teorema 3.1. Base discreta de Fourier
 
 **Enunciado.** Los vectores
 
@@ -328,7 +261,7 @@ $\langle\cdot,\cdot\rangle_M$.
 geométrica de potencias de una raíz $M$-ésima de la unidad. La suma vale uno
 si $k=\ell$ y cero en caso contrario.
 
-### Corolario 5.2. Transformada discreta e inversa
+### Corolario 3.2. Transformada discreta e inversa
 
 Los coeficientes y la reconstrucción son
 
@@ -348,7 +281,7 @@ $$
 La FFT es un algoritmo eficiente para calcular estos coeficientes; no es una
 transformada diferente.
 
-### Proposición 5.3. Parseval discreto
+### Proposición 3.3. Parseval discreto
 
 **Enunciado.** Con la normalización anterior,
 
@@ -363,7 +296,7 @@ base ortonormal. $\square$
 Conservar un subconjunto de coeficientes y anular el resto es proyectar la
 señal sobre el subespacio generado por las frecuencias seleccionadas.
 
-## 6. Imágenes y transformadas bidimensionales
+## 4. Imágenes y transformadas bidimensionales
 
 Una imagen en escala de grises puede representarse por una matriz
 $A\in\mathbb R^{N\times M}$. Cada entrada es la intensidad de un píxel. El
@@ -380,12 +313,13 @@ La transformada bidimensional usa productos de funciones de una variable. En
 Fourier, cada componente representa simultáneamente una frecuencia vertical y
 una horizontal.
 
-## 7. Transformada discreta del coseno
+## 5. Transformada discreta del coseno
 
 La DCT evita trabajar explícitamente con números complejos y suele concentrar
-la energía de bloques de imagen en pocos coeficientes de baja frecuencia.
+gran parte de la norma cuadrática de bloques de imagen en pocos coeficientes de
+baja frecuencia.
 
-### Definición 7.1. Matriz DCT-II ortonormal
+### Definición 5.1. Matriz DCT-II ortonormal
 
 Para $0\leq k,n<N$, definimos
 
@@ -402,7 +336,7 @@ $$
 \alpha_k=\sqrt{\frac2N}\quad(k\geq1).
 $$
 
-### Teorema 7.2. Ortogonalidad y DCT bidimensional
+### Teorema 5.2. Ortogonalidad y DCT bidimensional
 
 **Enunciado.** La matriz $C$ es ortogonal:
 
@@ -429,7 +363,7 @@ $$
 forman una base ortonormal de $\mathbb R^N$. La DCT 2D aplica el cambio de base
 por filas y columnas. La invariancia de la norma se sigue de la ortogonalidad.
 
-### Proposición 7.3. Selección de coeficientes
+### Proposición 5.3. Selección de coeficientes
 
 **Enunciado.** Sea $K$ un conjunto de posiciones de frecuencia y sea $B_K$ la
 matriz que conserva $B_{rs}$ para $(r,s)\in K$ y coloca cero en las demás
@@ -453,7 +387,7 @@ $C$ forman una base ortonormal para el producto de Frobenius. Anular
 coordenadas es proyectar sobre el subespacio generado por las restantes.
 $\square$
 
-## 8. Lectura lineal de la compresión JPEG
+## 6. Lectura lineal de la compresión JPEG
 
 En una descripción simplificada, JPEG:
 
@@ -472,10 +406,10 @@ frecuencias, pero JPEG contiene pasos adicionales.
 
 Las bajas frecuencias describen variaciones suaves y estructura global. Las
 altas frecuencias describen detalles finos, bordes y parte del ruido. La
-calidad depende de cuánta energía se conserva, no solamente del número de
-coeficientes.
+calidad depende de cuánta norma cuadrática se conserva, no solamente del
+número de coeficientes.
 
-## 9. Errores frecuentes
+## 7. Errores frecuentes
 
 1. Omitir la conjugación en un producto interno complejo.
 2. Confundir la FFT con una transformada distinta de la DFT.
@@ -486,20 +420,3 @@ coeficientes.
    no lineal.
 6. Confundir compresión DCT con compresión por SVD; esta última se estudiará
    después de introducir valores singulares.
-
-## 10. Ejercicios
-
-1. Escriba $z=1-\sqrt3i$ en forma polar y calcule $z^4$.
-2. Verifique directamente que $(1,i)/\sqrt2$ y $(i,1)/\sqrt2$ son
-   ortogonales en $\mathbb C^2$ con la convención del curso.
-3. Calcule $c_{-1},c_0,c_1$ para $f(t)=\cos t+2\sin t$.
-4. Demuestre que, para una función real,
-   $c_{-k}=\overline{c_k}$.
-5. Construya la matriz discreta de Fourier para $M=4$ y verifique la
-   ortonormalidad con el producto interno promedio.
-6. Explique por qué conservar frecuencias $k$ y $M-k$ juntas permite obtener
-   una reconstrucción real.
-7. Construya la matriz DCT para $N=4$ y verifique numéricamente que
-   $C^TC=I$.
-8. Para una matriz $8\times8$, compare conservar un bloque $3\times3$ de
-   bajas frecuencias con conservar los nueve coeficientes de mayor magnitud.

@@ -27,59 +27,22 @@ aspectos:
 
 El signo registra la orientación.
 
-## 2. Definición mediante propiedades
+## 2. Recordatorio: determinantes de orden $1$, $2$ y $3$
 
-### Definición 2.1. Determinante
+Antes de formular el determinante en orden general, recordemos las expresiones
+que ya se conocen para matrices pequeñas.
 
-El determinante es la única función
-
-$$
-\det:(\mathbb R^n)^n\longrightarrow\mathbb R
-$$
-
-que cumple:
-
-1. **Multilinealidad:** es lineal en cada columna cuando las demás se mantienen
-   fijas.
-2. **Alternancia:** intercambiar dos columnas cambia el signo.
-3. **Normalización:** $\det(I_n)=1$.
-
-La multilinealidad en la columna $i$ significa, por ejemplo,
-
-$$
-\begin{aligned}
-&\det(A_1,\ldots,\alpha u+\beta v,\ldots,A_n)\\
-&\qquad=\alpha\det(A_1,\ldots,u,\ldots,A_n)
-+\beta\det(A_1,\ldots,v,\ldots,A_n).
-\end{aligned}
-$$
-
-## 3. Consecuencias inmediatas
-
-### Proposición 3.1. Columnas repetidas
-
-**Enunciado.** Si dos columnas de $A$ son iguales, entonces $\det(A)=0$.
-
-**Prueba.** Intercambiar esas columnas no cambia la matriz, pero por alternancia
-cambia el signo del determinante. Así,
-$\det(A)=-\det(A)$ y, por tanto, $\det(A)=0$. $\square$
-
-### Corolario 3.2. Columnas dependientes
-
-**Enunciado.** Si las columnas de $A$ son linealmente dependientes, entonces
-$\det(A)=0$.
-
-**Idea de prueba.** Despeje una columna como combinación de las demás y use la
-multilinealidad. Cada término resultante tiene dos columnas proporcionales y,
-por alternancia, determinante cero.
-
-## 4. Determinantes pequeños
+### Orden $1$
 
 Para una matriz $1\times1$,
 
 $$
 \det([a])=a.
 $$
+
+Por ejemplo, $\det([-5])=-5$.
+
+### Orden $2$
 
 Para una matriz $2\times2$,
 
@@ -90,11 +53,164 @@ $$
 Geométricamente, el valor absoluto es el área del paralelogramo generado por
 las columnas.
 
-Para una matriz triangular,
+#### Ejemplo 2.1
 
 $$
-\det(A)=a_{11}a_{22}\cdots a_{nn}.
+\det\begin{bmatrix}2&-1\\3&4\end{bmatrix}
+=2(4)-(-1)(3)=11.
 $$
+
+### Orden $3$
+
+Para una matriz $3\times3$, puede usarse la expresión conocida obtenida al
+desarrollar por la primera fila:
+
+$$
+\det\begin{bmatrix}
+a&b&c\\d&e&f\\g&h&i
+\end{bmatrix}
+=a(ei-fh)-b(di-fg)+c(dh-eg).
+$$
+
+#### Ejemplo 2.2
+
+$$
+\begin{aligned}
+\det\begin{bmatrix}
+1&2&0\\
+-1&3&1\\
+2&0&4
+\end{bmatrix}
+&=1(12)-2(-6)+0\\
+&=24.
+\end{aligned}
+$$
+
+En particular, para una matriz triangular de orden $1$, $2$ o $3$, el
+determinante es el producto de los elementos diagonales. Más adelante veremos
+que esto vale en cualquier orden.
+
+```{admonition} Propósito de este recordatorio
+:class: note
+Estas fórmulas permiten calcular determinantes pequeños. La definición que
+sigue no parte de una regla especial para cada tamaño: caracteriza una sola
+función determinante válida para todo orden $n$.
+```
+
+## 3. Definición general mediante propiedades
+
+### Definición 3.1. Determinante
+
+El determinante es la única función
+
+$$
+\det:(\mathbb R^n)^n\longrightarrow\mathbb R
+$$
+
+que cumple:
+
+1. **Multilinealidad.** El determinante es lineal en **una columna a la vez**
+   cuando todas las demás permanecen fijas. Para cada posición $j$,
+   cualesquiera columnas $u,v\in\mathbb R^n$ y escalares
+   $\alpha,\beta\in\mathbb R$,
+
+   $$
+   \begin{aligned}
+   &\det(A_1,\ldots,A_{j-1},\alpha u+\beta v,A_{j+1},\ldots,A_n)\\
+   &\quad=
+   \alpha\det(A_1,\ldots,A_{j-1},u,A_{j+1},\ldots,A_n)\\
+   &\qquad+
+   \beta\det(A_1,\ldots,A_{j-1},v,A_{j+1},\ldots,A_n).
+   \end{aligned}
+   $$
+
+   En particular, multiplicar **una sola columna** por $\lambda$ multiplica
+   el determinante por $\lambda$.
+
+2. **Alternancia.** Si se intercambian dos columnas cualesquiera $A_j$ y
+   $A_k$, con $j\neq k$, el determinante cambia de signo:
+
+   $$
+   \det(A_1,\ldots,A_j,\ldots,A_k,\ldots,A_n)
+   =-\det(A_1,\ldots,A_k,\ldots,A_j,\ldots,A_n).
+   $$
+
+   Como consecuencia, si dos columnas son iguales, el determinante es cero.
+
+3. **Normalización.** La matriz identidad tiene determinante uno:
+
+   $$
+   \det(I_n)=\det(e_1,\ldots,e_n)=1.
+   $$
+
+Aunque la definición se ha escrito usando columnas, las propiedades análogas
+se cumplen por filas: el determinante es lineal en una fila cuando las demás
+se fijan, e intercambiar dos filas cambia su signo.
+
+### Ejemplos 3.2. Las propiedades en matrices conocidas
+
+Ahora podemos usar las fórmulas recordadas en la sección anterior para
+comprobar concretamente las propiedades de la definición.
+
+**Multilinealidad.** Fijemos la primera columna $A_1=(1,2)^T$ y escribamos
+$(3,4)^T=(3,0)^T+(0,4)^T$. Entonces
+
+$$
+\begin{aligned}
+\det\begin{bmatrix}1&3\\2&4\end{bmatrix}
+&=\det\begin{bmatrix}1&3\\2&0\end{bmatrix}
+  +\det\begin{bmatrix}1&0\\2&4\end{bmatrix}\\
+&=-6+4=-2.
+\end{aligned}
+$$
+
+**Alternancia.** Al intercambiar las dos columnas,
+
+$$
+\det\begin{bmatrix}1&3\\2&4\end{bmatrix}=-2,
+\qquad
+\det\begin{bmatrix}3&1\\4&2\end{bmatrix}=2.
+$$
+
+**Normalización.** En orden tres,
+
+$$
+\det\begin{bmatrix}
+1&0&0\\
+0&1&0\\
+0&0&1
+\end{bmatrix}=1.
+$$
+
+Combinando normalización y multilinealidad,
+
+$$
+\det\begin{bmatrix}
+2&0&0\\
+0&-3&0\\
+0&0&4
+\end{bmatrix}
+=2(-3)(4)\det(I_3)=-24.
+$$
+
+## 4. Consecuencias inmediatas
+
+### Proposición 4.1. Columnas repetidas
+
+**Enunciado.** Si dos columnas de $A$ son iguales, entonces $\det(A)=0$.
+
+**Prueba.** Intercambiar esas columnas no cambia la matriz, pero por alternancia
+cambia el signo del determinante. Así,
+$\det(A)=-\det(A)$ y, por tanto, $\det(A)=0$. $\square$
+
+### Corolario 4.2. Columnas dependientes
+
+**Enunciado.** Si las columnas de $A$ son linealmente dependientes, entonces
+$\det(A)=0$.
+
+**Idea de prueba.** Despeje una columna como combinación de las demás y use la
+multilinealidad. Cada término resultante tiene dos columnas proporcionales y,
+por alternancia, determinante cero.
 
 ## 5. Menores, cofactores y fórmula de Laplace
 
@@ -121,7 +237,45 @@ $$
 \det(A)=\sum_{i=1}^n a_{ij}C_{ij}.
 $$
 
-### Ejemplo 5.3
+```{admonition} Por qué aparecen determinantes de orden $n-1$
+:class: note
+Fijemos la columna $j$ para realizar el desarrollo y escribámosla en la base
+canónica:
+
+$$
+A_j=\sum_{i=1}^n a_{ij}e_i.
+$$
+
+Por multilinealidad en esa columna,
+
+$$
+\det(A_1,\ldots,A_j,\ldots,A_n)
+=\sum_{i=1}^n a_{ij}
+\det(A_1,\ldots,e_i,\ldots,A_n).
+$$
+
+Una vez fijada $e_i$ en la posición $j$, el término restante es una función
+multilineal y alternante de las otras $n-1$ columnas. Al eliminar la coordenada
+$i$ de esas columnas, dicha función es, salvo el signo
+$(-1)^{i+j}$, **el único determinante de orden $n-1$**. Por eso
+
+$$
+\det(A_1,\ldots,e_i,\ldots,A_n)
+=(-1)^{i+j}\det(A_{ij}),
+$$
+
+y se obtiene la fórmula de Laplace
+
+$$
+\det(A)=\sum_{i=1}^n a_{ij}(-1)^{i+j}\det(A_{ij}).
+$$
+
+La expansión tiene así un sentido recursivo: el determinante de orden $n$ se
+construye a partir del único determinante ya definido en orden $n-1$, hasta
+llegar al caso inicial $\det([a])=a$.
+```
+
+### Ejemplo 5.3. Expansión simbólica
 
 Para
 
@@ -140,6 +294,21 @@ $$
 
 Conviene expandir por una fila o columna con muchos ceros. Para matrices
 grandes, la eliminación es mucho más eficiente.
+
+### Proposición 5.4. Determinante de una matriz triangular
+
+**Enunciado.** Si $A\in\mathbb R^{n\times n}$ es triangular superior o
+triangular inferior, entonces
+
+$$
+\boxed{
+\det(A)=a_{11}a_{22}\cdots a_{nn}.
+}
+$$
+
+**Idea de prueba.** Se aplica repetidamente la expansión de Laplace por una
+fila o columna extrema. En cada paso, los ceros eliminan todos los términos
+salvo el que contiene el elemento diagonal correspondiente. $\square$
 
 ## 6. Efecto de las operaciones elementales
 
@@ -209,6 +378,52 @@ $$
 $$
 
 porque el factor $\lambda$ aparece en cada una de las $n$ columnas.
+
+```{admonition} Multiplicar una fila no es multiplicar toda la matriz
+:class: warning
+Si se multiplica **una sola fila o columna** de $A$ por $\lambda$, el
+determinante queda multiplicado por $\lambda$. En cambio, $\lambda A$
+multiplica todas las entradas por $\lambda$: puede verse como multiplicar cada
+una de las $n$ filas por $\lambda$ o, equivalentemente, cada una de las $n$
+columnas. Son dos descripciones de la misma operación, no $2n$ escalamientos.
+Por eso
+
+$$
+\boxed{\det(\lambda A)=\lambda^n\det(A),}
+$$
+
+no $\lambda\det(A)$.
+
+Por ejemplo, si
+
+$$
+A=\begin{bmatrix}1&2\\3&4\end{bmatrix},
+\qquad \det(A)=-2,
+$$
+
+entonces
+
+$$
+\det(3A)
+=\det\begin{bmatrix}3&6\\9&12\end{bmatrix}
+=-18
+=3^2\det(A),
+$$
+
+mientras que $3\det(A)=-6$. Para una matriz $3\times3$, el factor sería
+$\lambda^3$.
+
+Dos consecuencias útiles son
+
+$$
+\det(\lambda I_n)=\lambda^n,
+\qquad
+\det(-A)=(-1)^n\det(A).
+$$
+
+Así, cambiar el signo de **toda** una matriz de orden par no cambia su
+determinante; para orden impar sí cambia el signo.
+```
 
 ```{admonition} El determinante no es lineal en la matriz completa
 :class: warning
@@ -293,11 +508,22 @@ por lo que $\det(A)=\pm1$.
    \end{bmatrix}.
    $$
 
-2. Encuentre un contraejemplo para
+2. Si $A\in\mathbb R^{3\times3}$ y $\det(A)=-5$, calcule, sin conocer las
+   entradas de $A$,
+
+   $$
+   \det(2A),\qquad
+   \det(-A),\qquad
+   \det\left(\frac12A\right).
+   $$
+
+   Explique por qué ninguno de estos cálculos requiere expandir un
+   determinante.
+3. Encuentre un contraejemplo para
    $\det(A+B)=\det(A)+\det(B)$.
-3. Demuestre que si $A$ es triangular e invertible, todos sus elementos
+4. Demuestre que si $A$ es triangular e invertible, todos sus elementos
    diagonales son no nulos.
-4. Use determinantes para decidir para qué valores de $a$ es invertible
+5. Use determinantes para decidir para qué valores de $a$ es invertible
 
    $$
    A(a)=\begin{bmatrix}
@@ -308,7 +534,7 @@ por lo que $\det(A)=\pm1$.
    \end{bmatrix}.
    $$
 
-5. Pruebe que
+6. Pruebe que
 
    $$
    \begin{bmatrix}

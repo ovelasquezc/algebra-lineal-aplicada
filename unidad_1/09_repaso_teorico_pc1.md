@@ -288,6 +288,18 @@ $x-x_p\in\ker(A)$. $\square$
 El determinante se define solo para matrices cuadradas. Es multilineal en las
 columnas, alternante y satisface $\det(I)=1$.
 
+```{admonition} Escalar una fila frente a escalar toda la matriz
+:class: warning
+Multiplicar una sola fila por $\lambda$ multiplica el determinante por
+$\lambda$. Si $A$ es $n\times n$, multiplicar **toda** la matriz produce
+
+$$
+\det(\lambda A)=\lambda^n\det(A),
+$$
+
+porque se han multiplicado sus $n$ filas por $\lambda$.
+```
+
 ### Proposición 6.1. Operaciones elementales y determinante
 
 1. Intercambiar filas cambia el signo.

@@ -10,6 +10,13 @@ Al finalizar este tema, el estudiante podrá:
 4. construir e interpretar matrices de proyección ortogonal;
 5. obtener la proyección y la distancia a un hiperplano.
 
+```{admonition} Estructura que se usa en este tema
+:class: note
+La definición general de **espacio vectorial real con producto interno** está
+en [Ortogonalidad y proceso de Gram–Schmidt](01_ortogonalidad_gram_schmidt.md).
+En esta hoja se especializan sus resultados a la distancia y la proyección.
+```
+
 ## 1. Distancia de un punto a un conjunto
 
 ### Definición 1.1. Distancia a un conjunto
@@ -190,6 +197,20 @@ $$
 **Prueba.** Sea $p=P_W(x)$. Entonces $p\in W$ y $x-p\in W^\perp$, de modo que
 $x=p+(x-p)$. La unicidad se obtiene de
 $W\cap W^\perp=\{0\}$. $\square$
+
+```{admonition} Alcance y versión en espacios de Hilbert
+:class: note
+En dimensión finita todo subespacio es cerrado, por lo que el teorema anterior
+se aplica sin hipótesis adicionales. En un espacio de Hilbert $H$, la versión
+general afirma que, para todo **subespacio cerrado** $W$,
+
+$$
+H=W\oplus W^\perp.
+$$
+
+La condición de cerrado es esencial. Este teorema de proyección es el puente
+conceptual hacia la aproximación por polinomios trigonométricos en Fourier.
+```
 
 ## 4. Cómo calcular la proyección
 
