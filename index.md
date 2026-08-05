@@ -1,7 +1,10 @@
 # Álgebra Lineal Aplicada
 
-Material de clase para el curso de Álgebra Lineal Aplicada de la Universidad
-del Pacífico.
+Material de clase para el curso de Álgebra Lineal Aplicada de la Facultad de
+Ingeniería de la Universidad del Pacífico, actualmente para el semestre
+2026-2.
+
+**Docente:** Oswaldo Velásquez
 
 Este libro se encuentra en construcción y se amplía siguiendo el calendario y
 el sílabo del curso. Las Unidades 1, 2 y 3 están completas; la Unidad 4 se
