@@ -38,3 +38,7 @@ chapters:
     sections:
       - file: unidad_3/01_transformaciones_lineales_matrices
       - file: unidad_3/01_laboratorio_transformaciones
+      - file: unidad_3/02_operadores_adjuntos_invariantes
+      - file: unidad_3/02_laboratorio_adjuntos_invariantes
+      - file: unidad_3/03_valores_vectores_propios
+      - file: unidad_3/03_laboratorio_valores_propios
