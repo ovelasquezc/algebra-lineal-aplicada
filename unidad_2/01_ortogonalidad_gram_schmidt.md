@@ -74,16 +74,6 @@ $\int_{-1}^{1}t\,dt=0$.
 
 ## 2. Norma y ortogonalidad
 
-Todo producto interno induce una norma:
-
-$$
-\|u\|=\sqrt{\langle u,u\rangle}.
-$$
-
-Las propiedades de esta norma —incluidas Cauchy–Schwarz y la desigualdad
-triangular— se establecieron en la Unidad 1. Aquí las usaremos en un espacio
-con producto interno general.
-
 ### Definición 2.1. Espacio real con producto interno
 
 Un **espacio real con producto interno** es un espacio vectorial real $V$
@@ -99,6 +89,57 @@ Esta es la estructura en la que se definen ortogonalidad, ángulos y
 proyecciones. No se trata solamente de trabajar en $\mathbb R^n$: también son
 ejemplos los espacios de polinomios con productos internos integrales.
 
+### Teorema 2.2. Desigualdad de Cauchy–Schwarz
+
+**Enunciado.** Para todo $u,v\in V$,
+
+$$
+\boxed{
+|\langle u,v\rangle|\leq \|u\|\,\|v\|.
+}
+$$
+
+Si $u$ y $v$ son no nulos, la igualdad se cumple si y solo si son linealmente
+dependientes.
+
+### Proposición 2.3. Propiedades de la norma inducida
+
+**Enunciado.** Para todo $u,v\in V$ y $\lambda\in\mathbb R$, la función
+$\|u\|=\sqrt{\langle u,u\rangle}$ satisface:
+
+1. **No negatividad:** $\|u\|\geq0$.
+2. **Definición positiva:** $\|u\|=0$ si y solo si $u=0$.
+3. **Homogeneidad absoluta:**
+
+   $$
+   \|\lambda u\|=|\lambda|\,\|u\|.
+   $$
+
+4. **Desigualdad triangular:**
+
+   $$
+   \boxed{
+   \|u+v\|\leq\|u\|+\|v\|.
+   }
+   $$
+
+Por tanto, todo producto interno induce efectivamente una norma.
+
+```{admonition} Ejercicio para el lector
+:class: exercise
+Pruebe el Teorema 2.2 y las cuatro propiedades de la Proposición 2.3 para un
+producto interno real general. Para Cauchy–Schwarz, cuando $v\neq0$, estudie la
+no negatividad de
+
+$$
+\left\|u-\frac{\langle u,v\rangle}{\|v\|^2}v\right\|^2.
+$$
+
+Luego use Cauchy–Schwarz al expandir $\|u+v\|^2$ para obtener la desigualdad
+triangular. La prueba vista en la Unidad 1 correspondía solamente al producto
+interno usual y a la norma euclidiana de $\mathbb R^n$.
+```
+
 ```{admonition} Mención: espacios de Hilbert
 :class: note
 Una sucesión $(x_n)$ es **de Cauchy** si sus términos terminan siendo tan
@@ -113,7 +154,7 @@ plena generalidad. En el curso usaremos las ideas geométricas de esta teoría,
 sin desarrollar sus aspectos analíticos.
 ```
 
-### Definición 2.2. Vectores ortogonales
+### Definición 2.4. Vectores ortogonales
 
 Dos vectores $u,v\in V$ son **ortogonales**, y escribimos $u\perp v$, si
 
@@ -121,14 +162,14 @@ $$
 \langle u,v\rangle=0.
 $$
 
-### Definición 2.3. Conjuntos ortogonales y ortonormales
+### Definición 2.5. Conjuntos ortogonales y ortonormales
 
 Un conjunto de vectores no nulos $\{v_1,\ldots,v_r\}$ es:
 
 1. **ortogonal** si $\langle v_i,v_j\rangle=0$ para $i\neq j$;
 2. **ortonormal** si es ortogonal y $\|v_i\|=1$ para todo $i$.
 
-### Teorema 2.4. Pitágoras
+### Teorema 2.6. Pitágoras
 
 **Enunciado.** Si $u\perp v$, entonces
 
@@ -148,7 +189,7 @@ $$
 
 El término cruzado es cero porque $u\perp v$. $\square$
 
-### Teorema 2.5. Independencia de un conjunto ortogonal
+### Teorema 2.7. Independencia de un conjunto ortogonal
 
 **Enunciado.** Todo conjunto ortogonal de vectores no nulos es linealmente
 independiente.
