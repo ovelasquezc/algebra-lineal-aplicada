@@ -57,3 +57,7 @@ chapters:
       - file: unidad_4/01_laboratorio_svd_pseudoinversa
       - file: unidad_4/02_subespacios_rango_bajo
       - file: unidad_4/02_laboratorio_rango_bajo
+      - file: unidad_4/03_repaso_teorico_ef
+      - file: unidad_4/03_preparacion_ef
+      - file: unidad_4/03_laboratorio_preparacion_ef
+  - file: referencias

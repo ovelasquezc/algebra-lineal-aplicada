@@ -19,8 +19,9 @@ una sesión.
 La Unidad 1 establece los fundamentos sobre espacios vectoriales reales. La
 Unidad 2 desarrolla ortogonalidad, proyecciones, ajuste de datos y Fourier. La
 Unidad 3 estudia transformaciones lineales y la teoría espectral que permite
-simplificar operadores y formas cuadráticas. La Unidad 4 desarrolla SVD,
-reducción de dimensionalidad y optimización.
+simplificar operadores y formas cuadráticas. El avance publicado de la Unidad
+4 desarrolla SVD, pseudoinversa y aproximación de rango bajo; los temas
+posteriores se incorporarán más adelante.
 ```
 
 Comience por la [Unidad 1: Fundamentos del álgebra
@@ -34,3 +35,5 @@ aplicaciones](unidad_3/index.md).
 
 Finalmente, continúe con la [Unidad 4: Componentes principales y otras
 aplicaciones](unidad_4/index.md).
+
+La [bibliografía del curso](referencias.md) se encuentra al final del libro.

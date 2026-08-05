@@ -9,6 +9,7 @@
 !/index.md
 !/requirements.txt
 !/UPlogo.png
+!/referencias.md
 
 !/.github/
 /.github/*
@@ -83,6 +84,9 @@
 !/unidad_4/01_laboratorio_svd_pseudoinversa.ipynb
 !/unidad_4/02_subespacios_rango_bajo.md
 !/unidad_4/02_laboratorio_rango_bajo.ipynb
+!/unidad_4/03_repaso_teorico_ef.md
+!/unidad_4/03_preparacion_ef.md
+!/unidad_4/03_laboratorio_preparacion_ef.ipynb
 !/unidad_4/figuras/
 /unidad_4/figuras/*
 !/unidad_4/figuras/ojo_svd.jpg

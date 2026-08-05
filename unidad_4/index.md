@@ -20,7 +20,7 @@ alrededor de una misma herramienta matemática.
 | C23 | PCA, reducción de dimensionalidad y aplicaciones | Hoja de teoría y laboratorio |
 | C24 | Gradiente y Hessiana | Hoja de teoría y laboratorio |
 | C25 | Optimización con y sin restricciones | Hoja de teoría y laboratorio |
-| Después de C25 | Preparación integral para el EF | Repaso teórico, problemas y laboratorio |
+| Con el avance hasta C22 | Preparación para el EF | Repaso teórico, problemas y laboratorio |
 
 ## Primer bloque: C21
 
@@ -43,6 +43,17 @@ los vectores singulares derechos y presenta el teorema de
 Eckart-Young-Mirsky. La compresión de imágenes funciona como aplicación
 visual y cuantitativa. PCA, centrado de datos y filtrado colaborativo se
 reservan para C23.
+
+## Preparación para el examen final con el avance actual
+
+1. [Repaso teórico para el examen final](03_repaso_teorico_ef.md)
+2. [Guía de preparación y simulacro](03_preparacion_ef.md)
+3. [Laboratorio de preparación](03_laboratorio_preparacion_ef.ipynb)
+
+Este bloque es acumulativo, pero da prioridad a teoría espectral, formas
+cuadráticas, SVD, pseudoinversa y aproximación de rango bajo. PCA, gradiente,
+Hessiana y optimización quedan fuera de esta versión y se incorporarán cuando
+se desarrollen esos temas.
 
 ## Convenciones
 
