@@ -16,9 +16,9 @@ cálculos.
 
 ```{admonition} Alcance de esta versión
 :class: important
-La preparación llega hasta SVD, pseudoinversa y aproximación de rango bajo.
-No incluye PCA, gradiente, Hessiana ni optimización, que se desarrollarán más
-adelante.
+Este repaso fue preparado con el avance hasta SVD, pseudoinversa y
+aproximación de rango bajo. Para PCA y sus aplicaciones debe complementarse
+con C23. Gradiente, Hessiana y optimización se incorporarán más adelante.
 ```
 
 ## 1. Herramientas acumulativas
@@ -295,7 +295,7 @@ $$
 \boxed{S_k=\operatorname{span}\{v_1,\ldots,v_k\}.}
 $$
 
-La energía capturada es $\sum_{i=1}^k\sigma_i^2$ y el error residual es
+La parte de $\|A\|_F^2$ conservada es $\sum_{i=1}^k\sigma_i^2$ y el error residual al cuadrado es
 $\sum_{i=k+1}^r\sigma_i^2$.
 
 ## 6. Procedimientos que debes dominar
@@ -321,7 +321,7 @@ $\sum_{i=k+1}^r\sigma_i^2$.
 
 1. Conserva los primeros $k$ términos de la SVD.
 2. Calcula el error a partir de los valores singulares descartados.
-3. Distingue porcentaje de energía,
+3. Distingue la proporción de $\|A\|_F^2$ conservada,
    $100\sum_{i\leq k}\sigma_i^2/\sum_i\sigma_i^2$, de reducción de
    almacenamiento.
 
@@ -333,4 +333,5 @@ $\sum_{i=k+1}^r\sigma_i^2$.
 - Suponer que $A^+=(A^TA)^{-1}A^T$ sin verificar rango columna completo.
 - Creer que $A^+b$ siempre resuelve exactamente $Ax=b$.
 - Truncar según el tamaño de entradas y no según los valores singulares.
-- Usar $\sum_i\sigma_i$ cuando se pide energía o error de Frobenius.
+- Usar $\sum_i\sigma_i$ cuando se pide la norma de Frobenius al cuadrado o
+  el error de Frobenius.

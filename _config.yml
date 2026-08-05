@@ -13,6 +13,7 @@ execute:
 # quedar fuera de Git mediante .gitignore.
 exclude_patterns:
   - README.md
+  - .venv/**
   - material_interno/**
   - ALA_DCT.ipynb
   - AlgebraLinealAplicada20261S01C1.ipynb

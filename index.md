@@ -23,7 +23,7 @@ La Unidad 1 establece los fundamentos sobre espacios vectoriales reales. La
 Unidad 2 desarrolla ortogonalidad, proyecciones, ajuste de datos y Fourier. La
 Unidad 3 estudia transformaciones lineales y la teoría espectral que permite
 simplificar operadores y formas cuadráticas. El avance publicado de la Unidad
-4 desarrolla SVD, pseudoinversa y aproximación de rango bajo; los temas
+4 desarrolla SVD, pseudoinversa, aproximación de rango bajo y PCA; los temas
 posteriores se incorporarán más adelante.
 ```
 

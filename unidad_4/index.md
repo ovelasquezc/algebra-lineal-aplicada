@@ -41,19 +41,28 @@ sesión.
 Esta sesión formula el mejor ajuste por subespacios, obtiene la solución con
 los vectores singulares derechos y presenta el teorema de
 Eckart-Young-Mirsky. La compresión de imágenes funciona como aplicación
-visual y cuantitativa. PCA, centrado de datos y filtrado colaborativo se
-reservan para C23.
+visual y cuantitativa. PCA, centrado de datos y factores latentes se
+desarrollan en C23.
 
-## Preparación para el examen final con el avance actual
+## Tercer bloque: C23
+
+1. [Análisis de componentes principales y aplicaciones](03_pca_aplicaciones.md)
+2. [Laboratorio de PCA y aplicaciones](03_laboratorio_pca_aplicaciones.ipynb)
+
+Esta sesión prueba la equivalencia entre minimizar distancias y maximizar
+varianza para datos centrados. Incluye coordenadas principales, la proyección
+de puntos de $\mathbb R^3$ sobre un plano y el análisis de una matriz de
+calificaciones de películas mediante dos factores latentes.
+
+## Preparación para el examen final
 
 1. [Repaso teórico para el examen final](03_repaso_teorico_ef.md)
 2. [Guía de preparación y simulacro](03_preparacion_ef.md)
 3. [Laboratorio de preparación](03_laboratorio_preparacion_ef.ipynb)
 
-Este bloque es acumulativo, pero da prioridad a teoría espectral, formas
-cuadráticas, SVD, pseudoinversa y aproximación de rango bajo. PCA, gradiente,
-Hessiana y optimización quedan fuera de esta versión y se incorporarán cuando
-se desarrollen esos temas.
+Este bloque fue preparado inicialmente con el avance hasta C22. Debe leerse
+junto con C23 para incorporar PCA y sus aplicaciones. Gradiente, Hessiana y
+optimización se añadirán cuando se desarrollen esas sesiones.
 
 ## Convenciones
 

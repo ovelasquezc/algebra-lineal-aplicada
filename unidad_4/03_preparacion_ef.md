@@ -9,10 +9,10 @@ guía por escrito y sin software. Después usa el
 
 ## Propósito, alcance y procedencia
 
-Esta versión cubre el curso hasta aproximación de rango bajo. No incluye PCA,
-gradiente, Hessiana ni optimización. Los temas previos continúan siendo
-prerrequisitos, pero la mayor carga está en la Unidad 3 y en los dos primeros
-bloques de la Unidad 4.
+Esta guía fue preparada con el avance hasta aproximación de rango bajo. Para
+PCA y sus aplicaciones debe complementarse con C23. Gradiente, Hessiana y
+optimización se incorporarán después de desarrollar esas sesiones. Los temas
+previos continúan siendo prerrequisitos.
 
 La procedencia aparece en cada encabezado. **Adaptado** indica que se conserva
 la habilidad evaluada, pero se ajustan el enunciado o los datos al alcance
@@ -25,7 +25,7 @@ que no estaban representadas en los exámenes históricos.
 | Central | Espectro y formas cuadráticas | diagonalizar, aplicar el teorema espectral y clasificar formas |
 | Central | SVD | construirla, leer los cuatro espacios y calcular normas |
 | Central | Pseudoinversa | verificar Moore--Penrose y resolver con norma mínima |
-| Central | Rango bajo | truncar, cuantificar el error e interpretar energía |
+| Central | Rango bajo | truncar, cuantificar el error y la proporción conservada de $\|A\|_F^2$ |
 
 ## 1. Preguntas conceptuales
 
@@ -242,8 +242,8 @@ $$
 1. Calcula $\|X\|_2$ y $\|X\|_F$.
 2. Escribe $X_2$, la mejor aproximación de rango dos.
 3. Calcula $\|X-X_2\|_2$ y $\|X-X_2\|_F$.
-4. Determina el porcentaje de energía capturada por $X_2$.
-5. ¿Cuál es el menor rango que captura al menos el $95\%$ de la energía?
+4. Determina el porcentaje de $\|X\|_F^2$ conservado por $X_2$.
+5. ¿Cuál es el menor rango que conserva al menos el $95\%$ de $\|X\|_F^2$?
 6. Explica qué subespacio aproxima mejor las filas de $X$ con dimensión dos.
 
 ### Ejercicio 15. Cálculo de una aproximación (elaboración para esta guía)
@@ -327,8 +327,8 @@ Una matriz $X$ tiene valores singulares $8,4,2,1$.
 2. Escribe la mejor aproximación de rango dos en términos de sus vectores
    singulares.
 3. Calcula los errores espectral y de Frobenius.
-4. Calcula el porcentaje de energía capturada.
-5. Determina el rango mínimo que captura al menos el $95\%$ de la energía.
+4. Calcula el porcentaje de la norma de Frobenius al cuadrado que se conserva.
+5. Determina el rango mínimo que conserva al menos el $95\%$ de esa cantidad.
 
 ## 7. Pistas y resultados breves
 
@@ -357,12 +357,12 @@ $t=0$, por lo que $D^+b=(1,1,0)^T$.
 
 ```{dropdown} Ejercicio 14
 $\|X\|_2=10$, $\|X\|_F=11$, $\|X-X_2\|_2=2$ y
-$\|X-X_2\|_F=\sqrt5$. La energía capturada por rango dos es
+$\|X-X_2\|_F=\sqrt5$. La proporción de $\|X\|_F^2$ conservada por rango dos es
 $116/121$. El rango mínimo para superar $95\%$ es dos.
 ```
 
 ```{dropdown} Simulacro
 En la pregunta 1: V, F, V, V. En la pregunta 2, los valores propios de $H$
-son $5$ y $0$. En la pregunta 4, la energía total es $85$, la capturada es
+son $5$ y $0$. En la pregunta 4, $\|A\|_F^2=85$, la parte conservada es
 $80$ y el rango mínimo para al menos $95\%$ es tres.
 ```
