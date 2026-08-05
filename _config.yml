@@ -46,3 +46,6 @@ repository:
   url: https://github.com/ovelasquezc/algebra-lineal-aplicada
   branch: main
   path_to_book: .
+
+launch_buttons:
+  colab_url: https://colab.research.google.com
