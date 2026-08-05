@@ -51,3 +51,9 @@ chapters:
       - file: unidad_3/07_repaso_teorico_pc2
       - file: unidad_3/07_preparacion_pc2
       - file: unidad_3/07_laboratorio_preparacion_pc2
+  - file: unidad_4/index
+    sections:
+      - file: unidad_4/01_svd_pseudoinversa
+      - file: unidad_4/01_laboratorio_svd_pseudoinversa
+      - file: unidad_4/02_subespacios_rango_bajo
+      - file: unidad_4/02_laboratorio_rango_bajo

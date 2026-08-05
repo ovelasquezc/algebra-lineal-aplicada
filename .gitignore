@@ -76,6 +76,17 @@
 !/unidad_3/07_preparacion_pc2.md
 !/unidad_3/07_laboratorio_preparacion_pc2.ipynb
 
+!/unidad_4/
+/unidad_4/*
+!/unidad_4/index.md
+!/unidad_4/01_svd_pseudoinversa.md
+!/unidad_4/01_laboratorio_svd_pseudoinversa.ipynb
+!/unidad_4/02_subespacios_rango_bajo.md
+!/unidad_4/02_laboratorio_rango_bajo.ipynb
+!/unidad_4/figuras/
+/unidad_4/figuras/*
+!/unidad_4/figuras/ojo_svd.jpg
+
 # Salidas locales del libro y entornos virtuales.
 /_build/
 /.jupyter_cache/
