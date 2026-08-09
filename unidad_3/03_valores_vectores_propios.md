@@ -97,7 +97,7 @@ exactamente los vectores propios asociados a $\lambda$.
 
 ### Proposición 2.2. El espacio propio es invariante
 
-**Enunciado.** $E_\lambda(A)$ es invariante bajo $A$.
+$E_\lambda(A)$ es invariante bajo $A$.
 
 **Prueba.** Si $v\in E_\lambda(A)$, entonces $Av=\lambda v$, que también
 pertenece a $E_\lambda(A)$ porque este es un subespacio. $\square$
@@ -115,7 +115,7 @@ mismas raíces, de modo que producen los mismos valores propios.
 
 ### Teorema 3.1. Ecuación característica
 
-**Enunciado.** Son equivalentes:
+Son equivalentes:
 
 1. $\lambda$ es valor propio de $A$;
 2. $(A-\lambda I)v=0$ tiene una solución no nula;
@@ -204,7 +204,7 @@ un valor propio real.
 
 ### Teorema 4.2. Existencia sobre los complejos
 
-**Enunciado.** Toda matriz compleja de orden $n\geq1$ tiene al menos un valor
+Toda matriz compleja de orden $n\geq1$ tiene al menos un valor
 propio complejo y tiene $n$ valores propios contando multiplicidades.
 
 **Idea de prueba.** $\chi_A$ tiene grado $n$. Por el teorema fundamental del
@@ -244,7 +244,7 @@ $$
 
 ### Teorema 5.3. Comparación de multiplicidades
 
-**Enunciado.** Para todo valor propio $\lambda$,
+Para todo valor propio $\lambda$,
 
 $$
 \boxed{1\leq m_g(\lambda)\leq m_a(\lambda).}
@@ -295,7 +295,7 @@ de modo que $m_g(0)=1$. Solo existe una dirección propia independiente.
 
 ### Teorema 6.1. Independencia de vectores propios
 
-**Enunciado.** Vectores propios asociados a valores propios distintos son
+Vectores propios asociados a valores propios distintos son
 linealmente independientes.
 
 **Prueba.** Sean $v_1,\ldots,v_r$ vectores propios asociados a valores
@@ -311,7 +311,7 @@ $c_1=\cdots=c_{r-1}=0$. La igualdad original da $c_r=0$. $\square$
 
 ### Teorema 6.2. Matrices semejantes
 
-**Enunciado.** Si $A=PBP^{-1}$, entonces $A$ y $B$ tienen el mismo polinomio
+Si $A=PBP^{-1}$, entonces $A$ y $B$ tienen el mismo polinomio
 característico y los mismos valores propios con sus multiplicidades
 algebraicas.
 
@@ -385,7 +385,7 @@ $$
 
 ### Proposición 6.5. Espectro y operaciones
 
-**Enunciado.** Si $Av=\lambda v$ y $q$ es un polinomio, entonces
+Si $Av=\lambda v$ y $q$ es un polinomio, entonces
 
 $$
 q(A)v=q(\lambda)v.
@@ -404,7 +404,7 @@ da $A^{-1}v=\lambda^{-1}v$. $\square$
 
 ### Proposición 6.6. Invertibilidad, traza y determinante
 
-**Enunciado.** Contando valores propios complejos con multiplicidad:
+Contando valores propios complejos con multiplicidad:
 
 $$
 \det(A)=\prod_{j=1}^n\lambda_j,
@@ -437,7 +437,7 @@ $$
 
 ### Teorema 7.1. Cayley–Hamilton
 
-**Enunciado.** Toda matriz satisface su propio polinomio característico:
+Toda matriz satisface su propio polinomio característico:
 
 $$
 \boxed{\chi_A(A)=0.}

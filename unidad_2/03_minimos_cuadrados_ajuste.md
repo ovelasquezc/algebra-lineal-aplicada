@@ -46,7 +46,7 @@ punto de $\operatorname{Col}(A)$ más cercano a $b$.
 
 ### Teorema 2.1. Caracterización por proyección
 
-**Enunciado.** Para $x^*\in\mathbb R^n$ son equivalentes:
+Para $x^*\in\mathbb R^n$ son equivalentes:
 
 1. $x^*$ es una solución de mínimos cuadrados de $Ax=b$.
 2. $Ax^*=P_{\operatorname{Col}(A)}(b)$.
@@ -69,7 +69,7 @@ de $A$ describen las mismas direcciones.
 
 ### Teorema 3.1. Ecuaciones normales
 
-**Enunciado.** Un vector $x^*$ resuelve el problema de mínimos cuadrados si y
+Un vector $x^*$ resuelve el problema de mínimos cuadrados si y
 solo si
 
 $$
@@ -93,7 +93,7 @@ normal, es decir, perpendicular, al espacio de columnas.
 
 ### Proposición 3.2. Identidad de optimalidad
 
-**Enunciado.** Si $x^*$ satisface las ecuaciones normales, entonces para todo
+Si $x^*$ satisface las ecuaciones normales, entonces para todo
 $x\in\mathbb R^n$,
 
 $$
@@ -125,7 +125,7 @@ $A(x_1-x_2)=0$ y, por tanto, producen el mismo vector ajustado.
 
 ### Proposición 3.3. Núcleo de la matriz normal
 
-**Enunciado.** Para toda matriz real $A$,
+Para toda matriz real $A$,
 
 $$
 \boxed{\operatorname{Nul}(A^TA)=\operatorname{Nul}(A).}
@@ -146,7 +146,7 @@ $\square$
 
 ### Teorema 3.4. Propiedades generales de las soluciones
 
-**Enunciado.** Para todo $A\in\mathbb R^{m\times n}$ y
+Para todo $A\in\mathbb R^{m\times n}$ y
 $b\in\mathbb R^m$, sea
 
 $$
@@ -196,7 +196,7 @@ La norma es mínima únicamente cuando $w=0$. $\square$
 
 ### Corolario 3.5. Fórmula en rango columna completo
 
-**Enunciado.** Si las columnas de $A$ son linealmente independientes,
+Si las columnas de $A$ son linealmente independientes,
 $A^TA$ es invertible y la solución única es
 
 $$
@@ -571,7 +571,7 @@ $$
 
 ### Teorema 6.2. Descomposición de la variabilidad
 
-**Enunciado.** Si la columna constante está incluida en el modelo, entonces
+Si la columna constante está incluida en el modelo, entonces
 
 $$
 \|y-\overline y\|^2

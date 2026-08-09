@@ -89,7 +89,7 @@ es un operador sobre $W$, llamado **restricción de $T$ a $W$**.
 
 ### Proposición 2.4. Invariancia y forma por bloques
 
-**Enunciado.** Sea $\dim V=n$, sea $\dim W=k$ y supongamos que $W$ es
+Sea $\dim V=n$, sea $\dim W=k$ y supongamos que $W$ es
 invariante bajo $T$. Si una base $\mathcal B_W=(w_1,\ldots,w_k)$ de $W$ se
 completa a una base
 
@@ -116,7 +116,7 @@ $\square$
 
 ### Corolario 2.5. Descomposición en subespacios invariantes
 
-**Enunciado.** Si $V=W\oplus Z$ y tanto $W$ como $Z$ son invariantes bajo
+Si $V=W\oplus Z$ y tanto $W$ como $Z$ son invariantes bajo
 $T$, una base adaptada a la suma directa produce
 
 $$
@@ -138,7 +138,7 @@ invariantes pequeños permite separar un problema grande en problemas menores.
 
 ### Teorema 3.1. Existencia y unicidad del adjunto
 
-**Enunciado.** Para todo operador lineal $T:V\to V$ existe un único operador
+Para todo operador lineal $T:V\to V$ existe un único operador
 $T^*:V\to V$ tal que
 
 $$
@@ -173,7 +173,7 @@ base que no sea ortonormal.
 
 ### Proposición 3.3. Propiedades del adjunto
 
-**Enunciado.** Para operadores $S,T$ y un escalar $\alpha$:
+Para operadores $S,T$ y un escalar $\alpha$:
 
 1. $(S+T)^*=S^*+T^*$;
 2. $(\alpha T)^*=\overline\alpha\,T^*$;
@@ -212,7 +212,7 @@ cuando $G=I$, es decir, en una base ortonormal.
 
 ### Teorema 4.1. Relaciones fundamentales
 
-**Enunciado.** Para una transformación lineal $T:V\to W$ entre espacios con
+Para una transformación lineal $T:V\to W$ entre espacios con
 producto interno de dimensión finita,
 
 $$
@@ -245,7 +245,7 @@ segunda igualdad. $\square$
 
 ### Teorema 4.2. Invariancia y complemento ortogonal
 
-**Enunciado.** Si $W$ es invariante bajo $T$, entonces $W^\perp$ es
+Si $W$ es invariante bajo $T$, entonces $W^\perp$ es
 invariante bajo $T^*$.
 
 **Prueba.** Sean $x\in W^\perp$ y $w\in W$. Como $Tw\in W$,
@@ -284,7 +284,7 @@ En una base ortonormal, su matriz es simétrica en el caso real
 
 ### Proposición 5.2. Una primera consecuencia
 
-**Enunciado.** Si $T$ es autoadjunto y $W$ es invariante bajo $T$, entonces
+Si $T$ es autoadjunto y $W$ es invariante bajo $T$, entonces
 $W^\perp$ también es invariante bajo $T$.
 
 **Prueba.** Por el Teorema 4.2, $W^\perp$ es invariante bajo $T^*$. Como
@@ -295,7 +295,7 @@ Esta propiedad será central cuando estudiemos el teorema espectral.
 
 ### Proposición 5.3. Proyección ortogonal
 
-**Enunciado.** Sea $P_W$ la proyección ortogonal sobre $W$. Entonces:
+Sea $P_W$ la proyección ortogonal sobre $W$. Entonces:
 
 1. $P_W^2=P_W$;
 2. $P_W^*=P_W$;

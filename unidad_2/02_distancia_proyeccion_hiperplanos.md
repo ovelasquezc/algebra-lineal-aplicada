@@ -63,7 +63,7 @@ entre dos puntos del conjunto permanece dentro del conjunto.
 
 ### Teorema 2.2. Existencia y unicidad
 
-**Enunciado.** Si $C\subseteq\mathbb R^n$ es no vacío, cerrado y convexo,
+Si $C\subseteq\mathbb R^n$ es no vacío, cerrado y convexo,
 entonces para cada $x\in\mathbb R^n$ existe un único punto $P_C(x)\in C$ que
 minimiza $\|x-y\|$ sobre $y\in C$.
 
@@ -77,7 +77,7 @@ $x$, una contradicción.
 
 ### Teorema 2.3. Caracterización por producto interno
 
-**Enunciado.** Sea $C\subseteq\mathbb R^n$ no vacío, cerrado y convexo. Para
+Sea $C\subseteq\mathbb R^n$ no vacío, cerrado y convexo. Para
 $p\in C$ son equivalentes:
 
 1. $p=P_C(x)$.
@@ -131,7 +131,7 @@ desigualdad del teorema anterior se convierte en una igualdad.
 
 ### Teorema 3.1. Caracterización de la proyección ortogonal
 
-**Enunciado.** Sea $W\subseteq\mathbb R^n$ un subespacio y $p\in W$. Entonces
+Sea $W\subseteq\mathbb R^n$ un subespacio y $p\in W$. Entonces
 
 $$
 p=P_W(x)
@@ -168,7 +168,7 @@ el subespacio.
 
 ### Corolario 3.2. Mejor aproximación y Pitágoras
 
-**Enunciado.** Si $p=P_W(x)$, entonces para todo $w\in W$,
+Si $p=P_W(x)$, entonces para todo $w\in W$,
 
 $$
 \boxed{\|x-w\|^2=\|x-p\|^2+\|p-w\|^2.}
@@ -182,7 +182,7 @@ $\square$
 
 ### Teorema 3.3. Descomposición ortogonal
 
-**Enunciado.** Para todo subespacio $W\subseteq\mathbb R^n$,
+Para todo subespacio $W\subseteq\mathbb R^n$,
 
 $$
 \mathbb R^n=W\oplus W^\perp.
@@ -216,7 +216,7 @@ conceptual hacia la aproximación por polinomios trigonométricos en Fourier.
 
 ### Teorema 4.1. Fórmula con una base ortogonal
 
-**Enunciado.** Si $(v_1,\ldots,v_r)$ es una base ortogonal de $W$, entonces
+Si $(v_1,\ldots,v_r)$ es una base ortogonal de $W$, entonces
 
 $$
 P_W(x)=\sum_{i=1}^r
@@ -235,7 +235,7 @@ que es la proyección. $\square$
 
 ### Teorema 4.2. Matriz de proyección con columnas ortonormales
 
-**Enunciado.** Sea $U=[u_1\ \cdots\ u_r]\in\mathbb R^{n\times r}$, donde las
+Sea $U=[u_1\ \cdots\ u_r]\in\mathbb R^{n\times r}$, donde las
 columnas forman una base ortonormal de $W$. Entonces
 
 $$
@@ -250,7 +250,7 @@ Teorema 4.1. $\square$
 
 ### Proposición 4.3. Propiedades de la matriz de proyección
 
-**Enunciado.** La matriz $P=UU^T$ satisface:
+La matriz $P=UU^T$ satisface:
 
 1. $P^T=P$.
 2. $P^2=P$.
@@ -271,7 +271,7 @@ $x-Px\in W^\perp$, lo que prueba la última propiedad. $\square$
 
 ### Proposición 4.4. Fórmula desde una base no ortonormal
 
-**Enunciado.** Si $B\in\mathbb R^{n\times r}$ tiene columnas linealmente
+Si $B\in\mathbb R^{n\times r}$ tiene columnas linealmente
 independientes y $W=\operatorname{Col}(B)$, entonces
 
 $$
@@ -300,7 +300,7 @@ El subespacio $W$ contiene las direcciones de $A$.
 
 ### Teorema 5.2. Proyección sobre una traslación
 
-**Enunciado.** Si $A=a+W$, entonces
+Si $A=a+W$, entonces
 
 $$
 \boxed{P_A(x)=a+P_W(x-a)}
@@ -335,7 +335,7 @@ vector $u$ es normal al hiperplano.
 
 ### Teorema 6.2. Proyección y distancia a un hiperplano
 
-**Enunciado.** Para $x\in\mathbb R^n$,
+Para $x\in\mathbb R^n$,
 
 $$
 \boxed{

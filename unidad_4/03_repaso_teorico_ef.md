@@ -25,7 +25,7 @@ con C23. Gradiente, Hessiana y optimización se incorporarán más adelante.
 
 ### Resultado 1.1. Rango-nulidad
 
-**Enunciado.** Para $A\in\mathbb R^{m\times n}$,
+Para $A\in\mathbb R^{m\times n}$,
 
 $$
 \boxed{\dim\ker(A)+\operatorname{rango}(A)=n.}
@@ -37,7 +37,7 @@ $\operatorname{Im}(A)$.
 
 ### Resultado 1.2. Descomposiciones ortogonales
 
-**Enunciado.** Para todo subespacio $S\subseteq\mathbb R^n$,
+Para todo subespacio $S\subseteq\mathbb R^n$,
 
 $$
 \mathbb R^n=S\oplus S^\perp.
@@ -54,7 +54,6 @@ Las matrices $P_S$ satisfacen $P_S^T=P_S$ y $P_S^2=P_S$.
 
 ### Resultado 1.3. Espacios fundamentales
 
-**Enunciado.**
 
 $$
 \boxed{\operatorname{Im}(A)^\perp=\ker(A^T)},
@@ -69,7 +68,7 @@ $\square$
 
 ### Resultado 1.4. Mínimos cuadrados y ecuaciones normales
 
-**Enunciado.** Un vector $x_*$ minimiza $\|Ax-b\|_2$ si y solo si
+Un vector $x_*$ minimiza $\|Ax-b\|_2$ si y solo si
 
 $$
 \boxed{A^TAx_*=A^Tb.}
@@ -87,7 +86,7 @@ puede reducirse eligiendo otro $x$.
 
 ### Teorema 2.1. Teorema espectral real
 
-**Enunciado.** Si $A=A^T\in\mathbb R^{n\times n}$, existe una matriz ortogonal
+Si $A=A^T\in\mathbb R^{n\times n}$, existe una matriz ortogonal
 $Q$ y una matriz diagonal real $\Lambda$ tales que
 
 $$
@@ -103,7 +102,7 @@ se aplica inducción a la restricción de $A$.
 
 ### Resultado 2.2. Cociente de Rayleigh
 
-**Enunciado.** Si $A=A^T$ y sus valores propios satisfacen
+Si $A=A^T$ y sus valores propios satisfacen
 $\lambda_1\geq\cdots\geq\lambda_n$, entonces
 
 $$
@@ -132,7 +131,7 @@ $$
 
 ### Teorema 3.1. SVD completa y reducida
 
-**Enunciado.** Toda $A\in\mathbb R^{m\times n}$ de rango $r$ admite
+Toda $A\in\mathbb R^{m\times n}$ de rango $r$ admite
 
 $$
 \boxed{A=U\Sigma V^T},
@@ -160,7 +159,7 @@ $Av_i=\sigma_i u_i$.
 
 ### Resultado 3.2. Espacios fundamentales leídos en la SVD
 
-**Enunciado.** Si $A=U_r\Sigma_rV_r^T$, entonces
+Si $A=U_r\Sigma_rV_r^T$, entonces
 
 $$
 \boxed{\operatorname{Im}(A)=\operatorname{span}\{u_1,\ldots,u_r\}},
@@ -175,7 +174,7 @@ $\ker(A)$ y los izquierdos restantes forman una base de $\ker(A^T)$.
 
 ### Resultado 3.3. Transformaciones de los valores singulares
 
-**Enunciado.** Los valores singulares no nulos cumplen:
+Los valores singulares no nulos cumplen:
 
 1. $A$ y $A^T$ tienen los mismos valores singulares;
 2. los de $tA$ son $|t|\sigma_i$;
@@ -195,7 +194,6 @@ uno. $\square$
 
 ### Resultado 3.4. Normas inducidas por la SVD
 
-**Enunciado.**
 
 $$
 \boxed{\|A\|_2=\sigma_1},
@@ -218,7 +216,7 @@ $$
 
 ### Teorema 4.2. Caracterización de Moore--Penrose
 
-**Enunciado.** $A^+$ es la única matriz que satisface
+$A^+$ es la única matriz que satisface
 
 $$
 AA^+A=A,qquad A^+AA^+=A^+,
@@ -235,7 +233,6 @@ espacios fundamentales.
 
 ### Resultado 4.3. Proyecciones y solución canónica
 
-**Enunciado.**
 
 $$
 \boxed{AA^+=P_{\operatorname{Im}(A)}},
@@ -269,7 +266,7 @@ A=\sum_{i=1}^r\sigma_i u_iv_i^T,
 A_k=\sum_{i=1}^k\sigma_i u_iv_i^T.
 $$
 
-**Enunciado.** Entre todas las matrices $B$ de rango a lo más $k$,
+Entre todas las matrices $B$ de rango a lo más $k$,
 $A_k$ es una mejor aproximación de $A$ tanto en norma espectral como en
 norma de Frobenius. Además,
 
@@ -288,7 +285,7 @@ la fórmula exacta para el error de Frobenius.
 
 ### Resultado 5.2. Mejor subespacio para las filas
 
-**Enunciado.** Si las filas de $X$ son datos en $\mathbb R^d$, un subespacio
+Si las filas de $X$ son datos en $\mathbb R^d$, un subespacio
 de dimensión $k$ que minimiza la suma de distancias cuadradas es
 
 $$

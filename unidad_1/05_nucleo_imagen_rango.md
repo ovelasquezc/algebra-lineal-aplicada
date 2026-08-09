@@ -50,7 +50,7 @@ Por tanto, $\ker(A)$ es un subconjunto del dominio $\mathbb R^n$.
 
 ### Teorema 2.2. El núcleo es un subespacio
 
-**Enunciado.** $\ker(A)$ es un subespacio de $\mathbb R^n$.
+$\ker(A)$ es un subespacio de $\mathbb R^n$.
 
 **Prueba.** $A0=0$, por lo que el núcleo no es vacío. Si $u,v\in\ker(A)$ y
 $\alpha,\beta\in\mathbb R$, entonces
@@ -106,7 +106,7 @@ La imagen coincide con el **espacio columna** de $A$.
 
 ### Teorema 3.2. La imagen es un subespacio
 
-**Enunciado.** $\operatorname{Im}(A)$ es un subespacio de $\mathbb R^m$.
+$\operatorname{Im}(A)$ es un subespacio de $\mathbb R^m$.
 
 **Prueba.** $0=A0$ pertenece a la imagen. Si $y_1=Ax_1$ y $y_2=Ax_2$, entonces
 
@@ -141,7 +141,7 @@ de $\operatorname{rref}(A)$ forman una base de $\mathcal F(A)$.
 
 ### Teorema 5.1. Igualdad de rangos
 
-**Enunciado.** Para toda matriz $A$, coinciden:
+Para toda matriz $A$, coinciden:
 
 1. el número de pivotes de $A$;
 2. la dimensión del espacio columna;
@@ -162,7 +162,6 @@ por pivote. Así, las tres cantidades coinciden.
 
 ### Corolario 5.2. Rango y transpuesta
 
-**Enunciado.**
 
 $$
 \operatorname{rango}(A)=\operatorname{rango}(A^T).
@@ -175,7 +174,7 @@ fila y rango columna coinciden, ambos rangos son iguales. $\square$
 
 ### Teorema 6.1. Rango–nulidad
 
-**Enunciado.** Si $A\in\mathbb R^{m\times n}$, entonces
+Si $A\in\mathbb R^{m\times n}$, entonces
 
 $$
 \boxed{\dim\ker(A)+\operatorname{rango}(A)=n.}
@@ -205,7 +204,6 @@ libres. El rango cuenta las primeras; la nulidad cuenta las segundas.
 
 ### Teorema 7.1. Compatibilidad mediante la imagen
 
-**Enunciado.**
 
 $$
 Ax=b\text{ es compatible}
@@ -218,7 +216,7 @@ $x$ tal que $Ax=b$. $\square$
 
 ### Teorema 7.2. Estructura del conjunto solución
 
-**Enunciado.** Si $x_p$ es una solución particular de $Ax=b$, entonces todas
+Si $x_p$ es una solución particular de $Ax=b$, entonces todas
 las soluciones son
 
 $$

@@ -33,7 +33,7 @@ para todo $u,v\in V$ y todo $\alpha,\beta$ en el cuerpo de escalares.
 
 ### Teorema 1.2. Una transformación queda determinada por una base
 
-**Enunciado.** Si $\mathcal B=(b_1,\ldots,b_n)$ es una base de $V$, asignar
+Si $\mathcal B=(b_1,\ldots,b_n)$ es una base de $V$, asignar
 arbitrariamente los vectores $T(b_j)\in W$ determina una única transformación
 lineal $T:V\to W$.
 
@@ -71,7 +71,7 @@ $$
 
 ### Teorema 1.4. Rango-nulidad
 
-**Enunciado.** Si $V$ es de dimensión finita,
+Si $V$ es de dimensión finita,
 
 $$
 \boxed{\dim\ker(T)+\dim\operatorname{Im}(T)=\dim V.}
@@ -112,7 +112,7 @@ $U$ permanecen en $U$.
 
 ### Teorema 2.2. Existencia del adjunto
 
-**Enunciado.** En espacios con producto interno de dimensión finita, para
+En espacios con producto interno de dimensión finita, para
 cada $T:V\to W$ existe un único $T^*:W\to V$ tal que
 
 $$
@@ -126,7 +126,7 @@ $[T^*]=[T]^H$.
 
 ### Proposición 2.3. Reglas del adjunto
 
-**Enunciado.** Siempre que las composiciones tengan sentido,
+Siempre que las composiciones tengan sentido,
 
 $$
 (S+T)^*=S^*+T^*,\qquad
@@ -140,7 +140,6 @@ y se usa su unicidad.
 
 ### Proposición 2.4. Núcleo e imagen del adjunto
 
-**Enunciado.**
 
 $$
 \boxed{\ker(T^*)=\operatorname{Im}(T)^\perp,\qquad
@@ -181,7 +180,6 @@ $$
 
 ### Teorema 3.2. Polinomio característico
 
-**Enunciado.**
 
 $$
 \lambda\text{ es valor propio}
@@ -195,7 +193,7 @@ $\square$
 
 ### Proposición 3.3. Invariantes por semejanza
 
-**Enunciado.** Si $B=P^{-1}AP$, entonces $A$ y $B$ tienen el mismo polinomio
+Si $B=P^{-1}AP$, entonces $A$ y $B$ tienen el mismo polinomio
 característico y, por tanto, los mismos valores propios con las mismas
 multiplicidades algebraicas.
 
@@ -229,7 +227,7 @@ $$
 
 ### Teorema 4.1. Criterios equivalentes
 
-**Enunciado.** Para $A\in\mathbb F^{n\times n}$ son equivalentes:
+Para $A\in\mathbb F^{n\times n}$ son equivalentes:
 
 1. $A=PDP^{-1}$ para alguna $P$ invertible y alguna $D$ diagonal;
 2. existe una base de $\mathbb F^n$ formada por vectores propios de $A$;
@@ -270,7 +268,7 @@ $$
 
 ### Teorema 5.1. Realidad del espectro
 
-**Enunciado.** Todo valor propio de un operador autoadjunto es real.
+Todo valor propio de un operador autoadjunto es real.
 
 **Prueba.** Si $Av=\lambda v$ y $v\neq0$, entonces
 
@@ -285,7 +283,7 @@ Como $\langle v,v\rangle>0$, resulta $\lambda=\overline\lambda$. $\square$
 
 ### Teorema 5.2. Ortogonalidad de espacios propios
 
-**Enunciado.** Si $A=A^*$, $Av=\lambda v$, $Aw=\mu w$ y
+Si $A=A^*$, $Av=\lambda v$, $Aw=\mu w$ y
 $\lambda\neq\mu$, entonces $v\perp w$.
 
 **Prueba.**
@@ -301,7 +299,7 @@ Por tanto, $(\lambda-\mu)\langle v,w\rangle=0$. $\square$
 
 ### Teorema 5.3. Teorema espectral real
 
-**Enunciado.** Para una matriz real $A$ son equivalentes:
+Para una matriz real $A$ son equivalentes:
 
 1. $A=A^T$;
 2. existe una matriz ortogonal $Q$ y una matriz diagonal real $D$ tales que
@@ -313,7 +311,7 @@ transponiendo $QDQ^T$.
 
 ### Teorema 5.4. Cociente de Rayleigh
 
-**Enunciado.** Si $A=A^T$ y $x\neq0$,
+Si $A=A^T$ y $x\neq0$,
 
 $$
 \lambda_{\min}\leq
@@ -344,7 +342,7 @@ cruzado.
 
 ### Teorema 6.2. Clasificación espectral
 
-**Enunciado.** Si $A=A^T$, el signo de $Q_A(x)=x^TAx$ se determina por los
+Si $A=A^T$, el signo de $Q_A(x)=x^TAx$ se determina por los
 signos de sus valores propios:
 
 | Espectro | Clasificación |
@@ -367,7 +365,7 @@ $\square$
 
 ### Teorema 6.3. Criterio de Sylvester
 
-**Enunciado.** Una matriz simétrica $A$ es definida positiva si y solo si
+Una matriz simétrica $A$ es definida positiva si y solo si
 todos sus menores principales líderes son positivos. Es definida negativa si
 y solo si esos menores alternan signos:
 
@@ -380,7 +378,7 @@ Para semidefinitud no basta sustituir $>$ por $\geq$ en este criterio.
 
 ### Teorema 6.4. Ley de inercia de Sylvester
 
-**Enunciado.** Si $C$ es invertible, $A$ y $C^TAC$ tienen el mismo número de
+Si $C$ es invertible, $A$ y $C^TAC$ tienen el mismo número de
 valores propios positivos, negativos y cero.
 
 La congruencia preserva la inercia, pero no necesariamente los valores

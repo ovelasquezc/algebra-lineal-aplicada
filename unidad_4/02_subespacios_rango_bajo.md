@@ -54,7 +54,7 @@ $$
 
 ### Proposición 1.2. Distancia y proyección
 
-**Enunciado.** Minimizar $E(V)$ equivale a maximizar
+Minimizar $E(V)$ equivale a maximizar
 
 $$
 S(V)=\sum_{i=1}^N\|P_Vx_i\|^2.
@@ -136,7 +136,7 @@ El procedimiento continúa de manera **secuencial** o *greedy*.
 
 ### Teorema 3.1. Construcción secuencial del mejor subespacio
 
-**Enunciado.** Para $j=1,\ldots,k$, sea
+Para $j=1,\ldots,k$, sea
 
 $$
 \boxed{
@@ -161,7 +161,7 @@ la solución global no es automático; se deduce de Courant--Fischer.
 
 ### Teorema 4.1. Courant--Fischer, forma secuencial
 
-**Enunciado.** Sea $M\in\mathbb R^{d\times d}$ simétrica, con valores propios
+Sea $M\in\mathbb R^{d\times d}$ simétrica, con valores propios
 
 $$
 \lambda_1\geq\lambda_2\geq\cdots\geq\lambda_d
@@ -230,7 +230,7 @@ $$
 
 ### Teorema 5.1. Mejor subespacio
 
-**Enunciado.** Un $k$-subespacio de mejor ajuste para las filas de $X$ es
+Un $k$-subespacio de mejor ajuste para las filas de $X$ es
 
 $$
 \boxed{V_k=\operatorname{span}\{v_1,\ldots,v_k\}.}
@@ -301,7 +301,7 @@ $\operatorname{span}\{u_1,\ldots,u_k\}$.
 
 ### Teorema 7.1. Eckart--Young--Mirsky
 
-**Enunciado.** Sea $A\in\mathbb R^{m\times n}$ con valores singulares
+Sea $A\in\mathbb R^{m\times n}$ con valores singulares
 $\sigma_1\geq\cdots\geq\sigma_r>0$. Para $0\leq k<r$, la SVD truncada
 
 $$

@@ -38,7 +38,7 @@ sigue siendo el mismo.
 
 ### Teorema 1.2. Aplicación de coordenadas
 
-**Enunciado.** La aplicación
+La aplicación
 
 $$
 \phi_{\mathcal B}:V\to\mathbb R^n,
@@ -128,7 +128,7 @@ literalmente $\mathbb R^n$.
 
 ### Proposición 3.2. Propiedades
 
-**Enunciado.** Para bases $\mathcal B,\mathcal C,\mathcal D$:
+Para bases $\mathcal B,\mathcal C,\mathcal D$:
 
 1. $P_{\mathcal B\to\mathcal B}=I$.
 2. $P_{\mathcal C\to\mathcal B}=P_{\mathcal B\to\mathcal C}^{-1}$.
@@ -182,7 +182,7 @@ Su columna $j$ es $[T(b_j)]_{\mathcal C}$. Por ello su tamaño es $m\times n$.
 
 ### Teorema 4.2. Fórmula desde bases canónicas
 
-**Enunciado.** Si $U=\mathbb R^n$, $W=\mathbb R^m$ y $A$ es la matriz de $T$
+Si $U=\mathbb R^n$, $W=\mathbb R^m$ y $A$ es la matriz de $T$
 en bases canónicas, entonces
 
 $$

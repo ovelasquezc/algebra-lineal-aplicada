@@ -91,7 +91,7 @@ ejemplos los espacios de polinomios con productos internos integrales.
 
 ### Teorema 2.2. Desigualdad de Cauchy–Schwarz
 
-**Enunciado.** Para todo $u,v\in V$,
+Para todo $u,v\in V$,
 
 $$
 \boxed{
@@ -104,7 +104,7 @@ dependientes.
 
 ### Proposición 2.3. Propiedades de la norma inducida
 
-**Enunciado.** Para todo $u,v\in V$ y $\lambda\in\mathbb R$, la función
+Para todo $u,v\in V$ y $\lambda\in\mathbb R$, la función
 $\|u\|=\sqrt{\langle u,u\rangle}$ satisface:
 
 1. **No negatividad:** $\|u\|\geq0$.
@@ -171,7 +171,7 @@ Un conjunto de vectores no nulos $\{v_1,\ldots,v_r\}$ es:
 
 ### Teorema 2.6. Pitágoras
 
-**Enunciado.** Si $u\perp v$, entonces
+Si $u\perp v$, entonces
 
 $$
 \|u+v\|^2=\|u\|^2+\|v\|^2.
@@ -191,7 +191,7 @@ El término cruzado es cero porque $u\perp v$. $\square$
 
 ### Teorema 2.7. Independencia de un conjunto ortogonal
 
-**Enunciado.** Todo conjunto ortogonal de vectores no nulos es linealmente
+Todo conjunto ortogonal de vectores no nulos es linealmente
 independiente.
 
 **Prueba.** Supongamos que
@@ -214,7 +214,7 @@ Una base de $W$ es **ortogonal** si sus vectores son mutuamente ortogonales; es
 
 ### Teorema 3.2. Coeficientes en una base ortogonal
 
-**Enunciado.** Si $\mathcal B=(v_1,\ldots,v_r)$ es una base ortogonal de $W$,
+Si $\mathcal B=(v_1,\ldots,v_r)$ es una base ortogonal de $W$,
 entonces todo $x\in W$ se escribe como
 
 $$
@@ -257,7 +257,7 @@ y por tanto $x=v_1+v_2$.
 
 ### Corolario 3.4. Identidad de Parseval
 
-**Enunciado.** Si $(e_1,\ldots,e_r)$ es una base ortonormal de $W$, entonces,
+Si $(e_1,\ldots,e_r)$ es una base ortonormal de $W$, entonces,
 para todo $x\in W$,
 
 $$
@@ -281,7 +281,7 @@ No es necesario que $S$ sea un subespacio para que $S^\perp$ sí lo sea.
 
 ### Proposición 4.2. Propiedades del complemento ortogonal
 
-**Enunciado.** Sean $S,T\subseteq V$ y sea $W$ un subespacio. Entonces:
+Sean $S,T\subseteq V$ y sea $W$ un subespacio. Entonces:
 
 1. $S^\perp$ es un subespacio de $V$.
 2. Si $S\subseteq T$, entonces $T^\perp\subseteq S^\perp$.
@@ -314,7 +314,7 @@ $$
 
 ### Proposición 5.1. Descomposición respecto de una dirección
 
-**Enunciado.** Para $u\neq0$,
+Para $u\neq0$,
 
 $$
 x=\operatorname{proj}_u(x)
@@ -344,7 +344,7 @@ minimización de distancias y proyección sobre subespacios.
 
 ### Teorema 6.1. Ortogonalización de Gram–Schmidt
 
-**Enunciado.** Sean $v_1,\ldots,v_r$ vectores linealmente independientes. Se
+Sean $v_1,\ldots,v_r$ vectores linealmente independientes. Se
 definen
 
 $$

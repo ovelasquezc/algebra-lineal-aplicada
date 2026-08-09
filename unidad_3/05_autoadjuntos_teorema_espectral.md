@@ -39,7 +39,7 @@ $$
 
 ### Proposición 1.2. Representación matricial
 
-**Enunciado.** En una base ortonormal:
+En una base ortonormal:
 
 - sobre $\mathbb R$, $T$ es autoadjunto si y solo si su matriz es
   **simétrica**, $A=A^T$;
@@ -61,7 +61,7 @@ $A=G^{-1}A^*G$, o equivalentemente $GA=A^*G$.
 
 ### Teorema 2.1
 
-**Enunciado.** Todo valor propio de un operador autoadjunto es real.
+Todo valor propio de un operador autoadjunto es real.
 
 **Prueba.** Sea $Tv=\lambda v$, con $v\neq0$. Por autoadjunción,
 
@@ -97,7 +97,7 @@ complejas no obliga a que sus valores propios lo sean.
 
 ### Teorema 3.1
 
-**Enunciado.** Vectores propios de un operador autoadjunto asociados a valores
+Vectores propios de un operador autoadjunto asociados a valores
 propios distintos son ortogonales.
 
 **Prueba.** Sean
@@ -138,7 +138,7 @@ $E_\lambda$.
 
 ### Proposición 4.1
 
-**Enunciado.** Si $W$ es invariante bajo un operador autoadjunto $T$, entonces
+Si $W$ es invariante bajo un operador autoadjunto $T$, entonces
 $W^\perp$ también es invariante bajo $T$.
 
 **Prueba.** Sean $x\in W^\perp$ y $w\in W$. Como $Tw\in W$,
@@ -158,7 +158,7 @@ $\operatorname{span}\{v\}$ y su complemento ortogonal son invariantes.
 
 ### Teorema 5.1. Caso real
 
-**Enunciado.** Para $A\in\mathbb R^{n\times n}$, son equivalentes:
+Para $A\in\mathbb R^{n\times n}$, son equivalentes:
 
 1. $A$ es simétrica;
 2. existe una matriz ortogonal $Q$ y una matriz diagonal real $D$ tales que
@@ -214,7 +214,7 @@ Esto completa la prueba. $\square$
 
 ### Teorema 5.2. Caso complejo
 
-**Enunciado.** Para $A\in\mathbb C^{n\times n}$, son equivalentes:
+Para $A\in\mathbb C^{n\times n}$, son equivalentes:
 
 1. $A$ es hermitiana;
 2. existe una matriz unitaria $U$ y una matriz diagonal **real** $D$ tales que
@@ -305,7 +305,7 @@ $$
 
 ### Teorema 8.1
 
-**Enunciado.** Para un operador autoadjunto:
+Para un operador autoadjunto:
 
 1. $\Pi_\lambda$ es la proyección ortogonal sobre $E_\lambda$;
 2. $\Pi_\lambda^*=\Pi_\lambda$ y $\Pi_\lambda^2=\Pi_\lambda$;
@@ -358,7 +358,7 @@ $$
 
 ### Teorema 9.1. Cotas espectrales
 
-**Enunciado.** Si $A$ es autoadjunta y
+Si $A$ es autoadjunta y
 $\lambda_{\min}\leq\lambda_{\max}$ son sus valores propios extremos, entonces
 
 $$

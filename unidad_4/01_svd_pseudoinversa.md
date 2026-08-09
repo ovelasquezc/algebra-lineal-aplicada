@@ -31,7 +31,7 @@ siempre es simétrica y semidefinida positiva.
 
 ### Proposición 1.1. Propiedades de la matriz asociada
 
-**Enunciado.** Para toda matriz real $A$:
+Para toda matriz real $A$:
 
 1. $A^TA$ es simétrica;
 2. $A^TA$ es semidefinida positiva;
@@ -100,7 +100,7 @@ $$
 
 ### Proposición 2.2. Ortonormalidad de los vectores izquierdos
 
-**Enunciado.** Los vectores $u_1,\ldots,u_r$ construidos arriba son
+Los vectores $u_1,\ldots,u_r$ construidos arriba son
 ortonormales.
 
 **Prueba.** Para $1\leq i,j\leq r$,
@@ -126,7 +126,7 @@ $\mathbb R^m$.
 
 ### Teorema 3.1. SVD completa
 
-**Enunciado.** Para toda $A\in\mathbb R^{m\times n}$ de rango $r$ existen
+Para toda $A\in\mathbb R^{m\times n}$ de rango $r$ existen
 matrices ortogonales
 
 $$
@@ -212,7 +212,6 @@ términos para aproximar datos o subespacios se estudiará en C22.
 
 ### Consecuencia 4.1. Norma espectral
 
-**Enunciado.**
 
 $$
 \boxed{\|A\|_2=\max_{\|x\|=1}\|Ax\|=\sigma_1.}
@@ -305,7 +304,7 @@ $$
 
 ### Teorema 7.2. Ecuaciones de Moore-Penrose
 
-**Enunciado.** $A^+$ es la única matriz que satisface
+$A^+$ es la única matriz que satisface
 
 $$
 \boxed{
@@ -351,7 +350,7 @@ codominio; la segunda, en el dominio.
 
 ### Teorema 9.1. Solución canónica
 
-**Enunciado.** Para todo $b\in\mathbb R^m$,
+Para todo $b\in\mathbb R^m$,
 
 $$
 \boxed{x^+=A^+b}

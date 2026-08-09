@@ -53,7 +53,7 @@ $\dim(\mathcal P_2)=3$.
 
 ### Teorema 2.1. Criterio de combinación lineal
 
-**Enunciado.** Sea $W$ un subconjunto no vacío de un espacio vectorial real
+Sea $W$ un subconjunto no vacío de un espacio vectorial real
 $V$. Entonces $W$ es subespacio de $V$ si y solo si
 
 $$
@@ -69,7 +69,7 @@ cierre bajo producto escalar. Los demás axiomas se heredan de $V$. $\square$
 
 ### Proposición 2.2. Intersecciones
 
-**Enunciado.** La intersección de cualquier familia no vacía de subespacios de
+La intersección de cualquier familia no vacía de subespacios de
 $V$ es un subespacio de $V$.
 
 **Prueba.** El vector cero pertenece a todos los subespacios. Si $u$ y $v$
@@ -78,7 +78,7 @@ cada subespacio y, por tanto, a la intersección. $\square$
 
 ### Proposición 2.3. El generado es el menor subespacio
 
-**Enunciado.** Para $S\subseteq V$, $\operatorname{span}(S)$ es el menor
+Para $S\subseteq V$, $\operatorname{span}(S)$ es el menor
 subespacio que contiene a $S$.
 
 **Idea de prueba.** Las combinaciones lineales son estables bajo nuevas
@@ -101,7 +101,7 @@ combinación lineal.
 
 ### Teorema 3.2. Caracterización por traslación
 
-**Enunciado.** Un conjunto no vacío $A$ es afín si y solo si existen
+Un conjunto no vacío $A$ es afín si y solo si existen
 $x_0\in V$ y un subespacio $W\leq V$ tales que
 
 $$
@@ -127,7 +127,7 @@ Así, una recta que no pasa por el origen es afín, pero no es subespacio.
 
 ### Proposición 3.3. Conjunto de soluciones de $Ax=b$
 
-**Enunciado.** Si $Ax=b$ es compatible y $x_p$ es una solución particular,
+Si $Ax=b$ es compatible y $x_p$ es una solución particular,
 entonces
 
 $$
@@ -153,7 +153,7 @@ $$
 
 ### Proposición 4.2. La suma es subespacio
 
-**Enunciado.** $U+W$ es el menor subespacio de $V$ que contiene a $U\cup W$.
+$U+W$ es el menor subespacio de $V$ que contiene a $U\cup W$.
 
 **Prueba.** Es no vacío. Si $u_i\in U$ y $w_i\in W$, entonces
 
@@ -181,7 +181,7 @@ suma posee una única descomposición $v=u+w$ con $u\in U$ y $w\in W$.
 
 ### Teorema 5.2. Criterio de intersección
 
-**Enunciado.** Para subespacios $U,W\leq V$, son equivalentes:
+Para subespacios $U,W\leq V$, son equivalentes:
 
 1. $U+W=U\oplus W$.
 2. $U\cap W=\{0_V\}$.
@@ -195,7 +195,7 @@ la unicidad exigida en la definición. $\square$
 
 ### Teorema 5.3. Fórmula de dimensión
 
-**Enunciado.** Si $U$ y $W$ son de dimensión finita,
+Si $U$ y $W$ son de dimensión finita,
 
 $$
 \dim(U+W)=\dim U+\dim W-\dim(U\cap W).
@@ -207,7 +207,7 @@ conjunto resultante es una base de $U+W$.
 
 ### Corolario 5.4. Dimensión de una suma directa
 
-**Enunciado.** Si $U\cap W=\{0\}$, entonces
+Si $U\cap W=\{0\}$, entonces
 
 $$
 \dim(U\oplus W)=\dim U+\dim W.

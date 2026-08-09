@@ -50,7 +50,7 @@ $$
 
 ### Proposición 1.3. Basta la parte simétrica
 
-**Enunciado.** Para toda matriz real $A$,
+Para toda matriz real $A$,
 
 $$
 x^TAx=x^T\left(\frac{A+A^T}{2}\right)x.
@@ -147,7 +147,7 @@ Sea $A=A^T$ y $Q_A(x)=x^TAx$.
 
 ### Teorema 3.2. Criterio espectral
 
-**Enunciado.** La clasificación depende de los signos de los valores propios:
+La clasificación depende de los signos de los valores propios:
 
 | Signos del espectro | Clasificación |
 |---|---|
@@ -188,7 +188,7 @@ $\Delta_k=\det(A_k)$.
 
 ### Teorema 4.1. Definición positiva
 
-**Enunciado.** Para una matriz simétrica $A$ son equivalentes:
+Para una matriz simétrica $A$ son equivalentes:
 
 1. $A\succ0$;
 2. todos sus valores propios son positivos;
@@ -199,7 +199,7 @@ $\Delta_k=\det(A_k)$.
 
 ### Teorema 4.2. Definición negativa
 
-**Enunciado.** $A\prec0$ si y solo si
+$A\prec0$ si y solo si
 
 $$
 \boxed{(-1)^k\Delta_k>0,\qquad k=1,\ldots,n.}
@@ -242,7 +242,7 @@ Las matrices $A$ y $C^TAC$ se llaman **congruentes**.
 
 ### Teorema 5.1. Ley de inercia de Sylvester
 
-**Enunciado.** Una congruencia invertible conserva el número de valores
+Una congruencia invertible conserva el número de valores
 propios positivos, negativos y cero, aunque no conserva sus valores.
 
 La terna
@@ -303,7 +303,7 @@ lo que exhibe directamente sus signos positivo y negativo.
 
 ### Proposición 7.1
 
-**Enunciado.** Para toda matriz $B$,
+Para toda matriz $B$,
 
 $$
 B^TB\succeq0.
@@ -323,7 +323,7 @@ para $x\neq0$ exactamente cuando $\ker(B)=\{0\}$. $\square$
 
 ### Teorema 7.2. Factorización semidefinida
 
-**Enunciado.** Si $A=A^T\succeq0$, existe $B$ tal que
+Si $A=A^T\succeq0$, existe $B$ tal que
 
 $$
 \boxed{A=BB^T.}
@@ -347,7 +347,6 @@ $A=LL^T$, con $L$ triangular inferior y diagonal positiva.
 
 ### Proposición 8.1
 
-**Enunciado.**
 
 1. Si $A\succ0$ y $B\succ0$, entonces $A+B\succ0$.
 2. Si $A\succ0$ y $C$ es invertible, entonces $C^TAC\succ0$.
@@ -391,7 +390,7 @@ $$
 
 ### Teorema 9.1
 
-**Enunciado.** Si $A\succ0$, $f$ tiene un único mínimo global en
+Si $A\succ0$, $f$ tiene un único mínimo global en
 
 $$
 \boxed{x^*=A^{-1}b,}

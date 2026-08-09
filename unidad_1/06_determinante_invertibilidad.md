@@ -197,7 +197,7 @@ $$
 
 ### Proposición 4.1. Columnas repetidas
 
-**Enunciado.** Si dos columnas de $A$ son iguales, entonces $\det(A)=0$.
+Si dos columnas de $A$ son iguales, entonces $\det(A)=0$.
 
 **Prueba.** Intercambiar esas columnas no cambia la matriz, pero por alternancia
 cambia el signo del determinante. Así,
@@ -205,7 +205,7 @@ $\det(A)=-\det(A)$ y, por tanto, $\det(A)=0$. $\square$
 
 ### Corolario 4.2. Columnas dependientes
 
-**Enunciado.** Si las columnas de $A$ son linealmente dependientes, entonces
+Si las columnas de $A$ son linealmente dependientes, entonces
 $\det(A)=0$.
 
 **Idea de prueba.** Despeje una columna como combinación de las demás y use la
@@ -225,7 +225,7 @@ $$
 
 ### Teorema 5.2. Expansión de Laplace
 
-**Enunciado.** El determinante puede expandirse por cualquier fila $i$:
+El determinante puede expandirse por cualquier fila $i$:
 
 $$
 \det(A)=\sum_{j=1}^n a_{ij}C_{ij},
@@ -297,7 +297,7 @@ grandes, la eliminación es mucho más eficiente.
 
 ### Proposición 5.4. Determinante de una matriz triangular
 
-**Enunciado.** Si $A\in\mathbb R^{n\times n}$ es triangular superior o
+Si $A\in\mathbb R^{n\times n}$ es triangular superior o
 triangular inferior, entonces
 
 $$
@@ -349,7 +349,7 @@ solo es necesario registrar intercambios.
 
 ### Teorema 7.1. Producto
 
-**Enunciado.** Para matrices cuadradas del mismo orden,
+Para matrices cuadradas del mismo orden,
 
 $$
 \det(AB)=\det(A)\det(B).

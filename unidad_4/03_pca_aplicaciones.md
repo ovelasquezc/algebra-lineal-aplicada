@@ -141,7 +141,7 @@ ortonormal $Q=[q_1\ \cdots\ q_k]$, y sea $P_V=QQ^T$.
 
 ### Teorema 3.1. Equivalencia distancia--varianza
 
-**Enunciado.** Para datos centrados, minimizar
+Para datos centrados, minimizar
 
 $$
 E(V)=\sum_{i=1}^N\operatorname{dist}(z_i,V)^2
@@ -233,7 +233,7 @@ datos centrados.
 
 ### Teorema 4.2. Caracterización variacional
 
-**Enunciado.** La primera dirección principal resuelve
+La primera dirección principal resuelve
 
 $$
 v_1\in\arg\max_{\|v\|=1}v^TCv.

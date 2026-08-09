@@ -32,7 +32,7 @@ Dos vectores son ortogonales si $\langle x,y\rangle=0$.
 
 ### Proposición 1.2. Propiedades del producto interno
 
-**Enunciado.** Para $x,y,z\in\mathbb R^n$ y $\alpha,\beta\in\mathbb R$:
+Para $x,y,z\in\mathbb R^n$ y $\alpha,\beta\in\mathbb R$:
 
 1. **Simetría:** $\langle x,y\rangle=\langle y,x\rangle$.
 2. **Linealidad:**
@@ -57,7 +57,7 @@ $$
 
 ### Proposición 1.4. Propiedades de la norma
 
-**Enunciado.** Para $x,y\in\mathbb R^n$ y $\lambda\in\mathbb R$:
+Para $x,y\in\mathbb R^n$ y $\lambda\in\mathbb R$:
 
 1. **No negatividad:** $\|x\|\geq0$.
 2. **Definición positiva:** $\|x\|=0$ si y solo si $x=0$.
@@ -66,7 +66,7 @@ $$
 
 ### Teorema 1.5. Desigualdad de Cauchy–Schwarz
 
-**Enunciado.** Para $x,y\in\mathbb R^n$,
+Para $x,y\in\mathbb R^n$,
 
 $$
 |\langle x,y\rangle|\leq\|x\|\|y\|.
@@ -85,7 +85,7 @@ es inmediato.
 
 ### Teorema 1.6. Desigualdad triangular
 
-**Enunciado.** $\|x+y\|\leq\|x\|+\|y\|$.
+$\|x+y\|\leq\|x\|+\|y\|$.
 
 **Prueba.** Usando Cauchy–Schwarz,
 
@@ -127,7 +127,7 @@ columnas de $A$.
 
 ### Teorema 2.2. Conservación del conjunto solución
 
-**Enunciado.** Las operaciones elementales aplicadas a la matriz aumentada
+Las operaciones elementales aplicadas a la matriz aumentada
 $[A\mid b]$ no cambian el conjunto solución del sistema.
 
 **Idea de prueba.** Cada operación corresponde a reemplazar una ecuación por
@@ -184,7 +184,7 @@ sus bases.
 
 ### Teorema 3.4. Unicidad de coordenadas
 
-**Enunciado.** Si $\mathcal B=(v_1,\ldots,v_n)$ es una base, cada $x\in V$
+Si $\mathcal B=(v_1,\ldots,v_n)$ es una base, cada $x\in V$
 admite una única expresión
 
 $$
@@ -222,7 +222,7 @@ $\mathcal P_n$ y espacios de funciones reales.
 
 ### Teorema 4.2. Criterio de subespacio
 
-**Enunciado.** Un subconjunto no vacío $W\subseteq V$ es subespacio si y solo
+Un subconjunto no vacío $W\subseteq V$ es subespacio si y solo
 si
 
 $$
@@ -263,7 +263,7 @@ El núcleo y la imagen son subespacios de espacios diferentes.
 
 ### Teorema 5.2. Rango–nulidad
 
-**Enunciado.** Si $A$ tiene $n$ columnas,
+Si $A$ tiene $n$ columnas,
 
 $$
 \operatorname{rango}(A)+\operatorname{nulidad}(A)=n.
@@ -274,7 +274,7 @@ libres generan el núcleo. Cada columna es pivote o libre.
 
 ### Teorema 5.3. Estructura de las soluciones
 
-**Enunciado.** Si $Ax=b$ es compatible y $x_p$ es una solución particular,
+Si $Ax=b$ es compatible y $x_p$ es una solución particular,
 
 $$
 \{x:Ax=b\}=x_p+\ker(A).
@@ -309,7 +309,7 @@ porque se han multiplicado sus $n$ filas por $\lambda$.
 
 ### Teorema 6.2. Producto
 
-**Enunciado.** Para matrices cuadradas del mismo orden,
+Para matrices cuadradas del mismo orden,
 
 $$
 \det(AB)=\det(A)\det(B).
@@ -351,7 +351,7 @@ $$
 
 ### Teorema 7.2. Caracterización afín
 
-**Enunciado.** $H$ es afín si y solo si existen un punto $x_0$ y un subespacio
+$H$ es afín si y solo si existen un punto $x_0$ y un subespacio
 $W$ tales que
 
 $$
@@ -368,7 +368,7 @@ $$
 
 ### Teorema 7.4. Criterio de suma directa
 
-**Enunciado.** Son equivalentes:
+Son equivalentes:
 
 1. $U+W=U\oplus W$.
 2. $U\cap W=\{0\}$.
@@ -380,7 +380,7 @@ diferencias sean cero. $\square$
 
 ### Teorema 7.5. Fórmula de dimensión
 
-**Enunciado.** En dimensión finita,
+En dimensión finita,
 
 $$
 \dim(U+W)=\dim U+\dim W-\dim(U\cap W).
@@ -413,7 +413,7 @@ $$
 
 ### Teorema 8.2. Cambio de base
 
-**Enunciado.** Para bases $\mathcal B$ y $\mathcal C$,
+Para bases $\mathcal B$ y $\mathcal C$,
 
 $$
 [x]_{\mathcal C}

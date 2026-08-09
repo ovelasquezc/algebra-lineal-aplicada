@@ -37,7 +37,7 @@ desarrollaremos aquí los detalles analíticos de este espacio.
 
 ### Teorema 1.1. Ortogonalidad de las exponenciales
 
-**Enunciado.** Las funciones
+Las funciones
 
 $$
 e_k(t)=e^{ikt},
@@ -73,7 +73,7 @@ Tiene dimensión $2N+1$.
 
 ### Teorema 1.3. Suma parcial de Fourier
 
-**Enunciado.** La proyección de $f$ sobre $\mathcal T_N$ es
+La proyección de $f$ sobre $\mathcal T_N$ es
 
 $$
 \boxed{
@@ -107,7 +107,7 @@ El valor $|c_k|^2$ mide la contribución cuadrática de la frecuencia $k$.
 
 ### Teorema 1.4. Mejor aproximación por polinomios trigonométricos
 
-**Enunciado.** Para todo $p\in\mathcal T_N$,
+Para todo $p\in\mathcal T_N$,
 
 $$
 \boxed{
@@ -247,7 +247,7 @@ $$
 
 ### Teorema 3.1. Base discreta de Fourier
 
-**Enunciado.** Los vectores
+Los vectores
 
 $$
 e_k[n]=e^{2\pi i kn/M},
@@ -283,7 +283,7 @@ transformada diferente.
 
 ### Proposición 3.3. Parseval discreto
 
-**Enunciado.** Con la normalización anterior,
+Con la normalización anterior,
 
 $$
 \frac1M\sum_{n=0}^{M-1}|x_n|^2
@@ -338,7 +338,7 @@ $$
 
 ### Teorema 5.2. Ortogonalidad y DCT bidimensional
 
-**Enunciado.** La matriz $C$ es ortogonal:
+La matriz $C$ es ortogonal:
 
 $$
 CC^T=C^TC=I.
@@ -365,7 +365,7 @@ por filas y columnas. La invariancia de la norma se sigue de la ortogonalidad.
 
 ### Proposición 5.3. Selección de coeficientes
 
-**Enunciado.** Sea $K$ un conjunto de posiciones de frecuencia y sea $B_K$ la
+Sea $K$ un conjunto de posiciones de frecuencia y sea $B_K$ la
 matriz que conserva $B_{rs}$ para $(r,s)\in K$ y coloca cero en las demás
 posiciones. Entonces
 

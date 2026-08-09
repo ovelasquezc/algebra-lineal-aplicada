@@ -33,7 +33,7 @@ propios, el determinante, la traza y el rango.
 
 ### Proposición 1.2. Transporte de espacios propios
 
-**Enunciado.** Si $A=PBP^{-1}$, entonces
+Si $A=PBP^{-1}$, entonces
 
 $$
 E_\lambda(A)=P\,E_\lambda(B).
@@ -83,7 +83,7 @@ diagonalizable sobre $\mathbb R$, aunque sí puede serlo sobre $\mathbb C$.
 
 ### Teorema 2.2. Base de vectores propios
 
-**Enunciado.** Una matriz $A$ es diagonalizable si y solo si
+Una matriz $A$ es diagonalizable si y solo si
 $\mathbb K^n$ posee una base formada por vectores propios de $A$.
 
 **Prueba.** Supongamos que
@@ -115,7 +115,7 @@ donde $\lambda_1,\ldots,\lambda_r$ son distintos.
 
 ### Teorema 3.1. Criterio por espacios propios
 
-**Enunciado.** Son equivalentes:
+Son equivalentes:
 
 1. $A$ es diagonalizable;
 2. $\mathbb K^n=E_{\lambda_1}\oplus\cdots\oplus E_{\lambda_r}$;
@@ -134,7 +134,7 @@ $\square$
 
 ### Corolario 3.2. Valores propios distintos
 
-**Enunciado.** Si $A$ tiene $n$ valores propios distintos en $\mathbb K$,
+Si $A$ tiene $n$ valores propios distintos en $\mathbb K$,
 entonces es diagonalizable sobre $\mathbb K$.
 
 **Prueba.** Los vectores propios asociados a valores distintos son linealmente
@@ -145,7 +145,7 @@ El recíproco es falso: una matriz diagonal puede tener valores repetidos.
 
 ### Teorema 3.3. Criterio por un polinomio sin raíces repetidas
 
-**Enunciado.** $A$ es diagonalizable sobre $\mathbb K$ si y solo si existe un
+$A$ es diagonalizable sobre $\mathbb K$ si y solo si existe un
 polinomio
 
 $$
@@ -259,7 +259,7 @@ no una matriz $P$ particular.
 
 ### Proposición 6.1. Potencias
 
-**Enunciado.** Si $A=PDP^{-1}$, entonces, para todo entero $k\geq0$,
+Si $A=PDP^{-1}$, entonces, para todo entero $k\geq0$,
 
 $$
 \boxed{A^k=PD^kP^{-1}.}
@@ -273,7 +273,7 @@ fórmula general sigue por inducción. $\square$
 
 ### Proposición 6.2. Polinomios y funciones
 
-**Enunciado.** Si $A=PDP^{-1}$ y $f$ está definida en los valores propios,
+Si $A=PDP^{-1}$ y $f$ está definida en los valores propios,
 entonces
 
 $$
@@ -323,7 +323,7 @@ Cada $\Pi_i$ es un polinomio en $A$.
 
 ### Teorema 7.2. Descomposición espectral general
 
-**Enunciado.** Los proyectores espectrales satisfacen:
+Los proyectores espectrales satisfacen:
 
 1. $\operatorname{Im}(\Pi_i)=E_{\lambda_i}$;
 2. $\Pi_i^2=\Pi_i$;

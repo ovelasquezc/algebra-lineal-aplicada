@@ -43,7 +43,7 @@ Resolver $Ax=b$ equivale a decidir si $b\in\operatorname{Col}(A)$.
 
 ### Teorema 1.1. Rango-nulidad
 
-**Enunciado.** Si $A$ tiene $n$ columnas, entonces
+Si $A$ tiene $n$ columnas, entonces
 
 $$
 \boxed{\operatorname{rango}(A)+\operatorname{nulidad}(A)=n.}
@@ -55,7 +55,7 @@ núcleo.
 
 ### Proposición 1.2. Soluciones de un sistema compatible
 
-**Enunciado.** Si $x_p$ es una solución particular de $Ax=b$, entonces
+Si $x_p$ es una solución particular de $Ax=b$, entonces
 
 $$
 \boxed{\{x:Ax=b\}=x_p+\ker(A).}
@@ -103,7 +103,7 @@ Dos vectores son ortogonales cuando $\langle x,y\rangle=0$.
 
 ### Teorema 2.2. Pitágoras
 
-**Enunciado.** Si $x\perp y$, entonces
+Si $x\perp y$, entonces
 
 $$
 \boxed{\|x+y\|^2=\|x\|^2+\|y\|^2.}
@@ -114,7 +114,7 @@ son cero. $\square$
 
 ### Teorema 2.3. Cauchy-Schwarz
 
-**Enunciado.** Para $x,y\in V$,
+Para $x,y\in V$,
 
 $$
 |\langle x,y\rangle|\leq\|x\|\|y\|.
@@ -130,7 +130,7 @@ $$
 
 ### Proposición 2.4. Familia ortogonal
 
-**Enunciado.** Toda familia ortogonal de vectores no nulos es linealmente
+Toda familia ortogonal de vectores no nulos es linealmente
 independiente.
 
 **Prueba.** Si $\sum_j\alpha_jv_j=0$, se toma producto interno con $v_k$.
@@ -140,7 +140,7 @@ $\square$
 
 ### Teorema 2.5. Coordenadas en una base ortonormal
 
-**Enunciado.** Si $(u_1,\ldots,u_n)$ es una base ortonormal de $V$, entonces
+Si $(u_1,\ldots,u_n)$ es una base ortonormal de $V$, entonces
 
 $$
 \boxed{x=\sum_{j=1}^n\langle x,u_j\rangle u_j,}
@@ -154,7 +154,7 @@ La segunda igualdad es la identidad de Parseval.
 
 ### Teorema 3.1. Gram-Schmidt
 
-**Enunciado.** A partir de una familia linealmente independiente
+A partir de una familia linealmente independiente
 $(v_1,\ldots,v_r)$ se construye una familia ortogonal
 $(w_1,\ldots,w_r)$ mediante
 
@@ -188,7 +188,7 @@ dependiente o se cometió un error de cálculo.
 
 ### Teorema 4.1. Proyección sobre un subespacio
 
-**Enunciado.** Sea $W$ un subespacio de dimensión finita. Para cada $x$ existe
+Sea $W$ un subespacio de dimensión finita. Para cada $x$ existe
 un único $p\in W$ tal que
 
 $$
@@ -264,7 +264,7 @@ $$
 
 ### Teorema 5.1. Hiperplano
 
-**Enunciado.** Sea
+Sea
 
 $$
 H=\{z\in\mathbb R^n:a^Tz=b\},
@@ -297,7 +297,7 @@ $$
 
 ### Teorema 6.1. Ecuaciones normales
 
-**Enunciado.** Un vector $x^*$ minimiza $\|Ax-b\|_2$ si y solo si
+Un vector $x^*$ minimiza $\|Ax-b\|_2$ si y solo si
 
 $$
 \boxed{A^TAx^*=A^Tb.}
@@ -318,7 +318,7 @@ $A^T(b-Ax^*)=0$. $\square$
 
 ### Proposición 6.2. Existencia y unicidad
 
-**Enunciado.** Las ecuaciones normales siempre tienen al menos una solución.
+Las ecuaciones normales siempre tienen al menos una solución.
 El vector ajustado $Ax^*$ es único. Los coeficientes $x^*$ son únicos si y
 solo si las columnas de $A$ son linealmente independientes.
 

@@ -42,7 +42,7 @@ aplicación preserva todas las combinaciones lineales.
 
 ### Proposición 1.2. Consecuencias inmediatas
 
-**Enunciado.** Si $T:V\to W$ es lineal, entonces:
+Si $T:V\to W$ es lineal, entonces:
 
 1. $T(0_V)=0_W$;
 2. $T(-u)=-T(u)$;
@@ -91,7 +91,7 @@ $F(0)=b\neq0$.
 
 ### Teorema 2.1. Extensión lineal desde una base
 
-**Enunciado.** Sea $\mathcal B=(v_1,\ldots,v_n)$ una base de $V$. Dados
+Sea $\mathcal B=(v_1,\ldots,v_n)$ una base de $V$. Dados
 vectores arbitrarios $w_1,\ldots,w_n\in W$, existe una única transformación
 lineal $T:V\to W$ tal que
 
@@ -136,7 +136,7 @@ El núcleo es un subconjunto del **dominio** y la imagen es un subconjunto del
 
 ### Proposición 3.2. Son subespacios
 
-**Enunciado.** $\ker(T)$ es subespacio de $V$ e
+$\ker(T)$ es subespacio de $V$ e
 $\operatorname{Im}(T)$ es subespacio de $W$.
 
 **Prueba.** Si $u,v\in\ker(T)$, entonces
@@ -223,7 +223,7 @@ presenten de manera distinta.
 
 ### Teorema 4.2. Criterio del núcleo
 
-**Enunciado.** $T$ es inyectiva si y solo si
+$T$ es inyectiva si y solo si
 
 $$
 \boxed{\ker(T)=\{0_V\}.}
@@ -235,7 +235,7 @@ implica $u-v=0_V$, es decir, $u=v$. $\square$
 
 ### Teorema 4.3. Rango-nulidad
 
-**Enunciado.** Si $V$ tiene dimensión finita, entonces
+Si $V$ tiene dimensión finita, entonces
 
 $$
 \boxed{
@@ -270,7 +270,7 @@ $\mathcal E=(e_1,\ldots,e_n)$ la base canónica del dominio.
 
 ### Teorema 5.1. Matriz canónica
 
-**Enunciado.** Existe una única matriz $A\in\mathbb R^{m\times n}$ tal que
+Existe una única matriz $A\in\mathbb R^{m\times n}$ tal que
 
 $$
 \boxed{T(x)=Ax.}
@@ -378,7 +378,7 @@ diagonalización.
 
 ### Teorema 7.1. Matriz de una composición
 
-**Enunciado.** Sean $T:U\to V$ y $S:V\to W$ lineales, con bases compatibles
+Sean $T:U\to V$ y $S:V\to W$ lineales, con bases compatibles
 $\mathcal B$, $\mathcal C$ y $\mathcal D$. Entonces
 
 $$
@@ -407,7 +407,7 @@ $[S][T]$.
 
 ### Teorema 7.2. Inversa
 
-**Enunciado.** Si $T:V\to W$ es un isomorfismo, entonces $T^{-1}:W\to V$ es
+Si $T:V\to W$ es un isomorfismo, entonces $T^{-1}:W\to V$ es
 lineal y
 
 $$

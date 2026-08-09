@@ -211,7 +211,7 @@ revertirse.
 
 ### Teorema 2.4. Conservación del conjunto solución
 
-**Enunciado.** Si un sistema $\mathcal T$ se obtiene de $\mathcal S$ mediante
+Si un sistema $\mathcal T$ se obtiene de $\mathcal S$ mediante
 una operación elemental sobre ecuaciones, entonces
 
 $$
@@ -372,7 +372,7 @@ conjunto solución.
 
 ### Teorema 3.3. Conservación de soluciones en lenguaje matricial
 
-**Enunciado.** Si $[\widetilde A\mid\widetilde b]$ se obtiene de
+Si $[\widetilde A\mid\widetilde b]$ se obtiene de
 $[A\mid b]$ mediante una operación elemental por filas, entonces
 
 $$
@@ -409,7 +409,7 @@ elemental a la identidad $I_m$.
 
 ### Proposición 4.2. Una operación por filas es una multiplicación
 
-**Enunciado.** Sea $A\in\mathbb R^{m\times n}$. Si $E$ se obtiene aplicando a
+Sea $A\in\mathbb R^{m\times n}$. Si $E$ se obtiene aplicando a
 $I_m$ una operación elemental, entonces $EA$ es el resultado de aplicar esa
 misma operación a $A$.
 
@@ -420,6 +420,43 @@ combinación en las filas de $A$.
 
 Toda matriz elemental es invertible y su inversa corresponde a la operación
 inversa.
+
+La misma multiplicación transforma simultáneamente la matriz de coeficientes y
+el término independiente:
+
+$$
+E[A\mid b]=[EA\mid Eb].
+$$
+
+### Ejemplo 4.3. Una operación y su matriz elemental
+
+Para aplicar $F_2\leftarrow F_2-3F_1$ a una matriz de tres filas, efectuamos
+primero esa operación sobre $I_3$:
+
+$$
+E=
+\begin{bmatrix}
+1&0&0\\
+-3&1&0\\
+0&0&1
+\end{bmatrix}.
+$$
+
+Entonces $EA$ es exactamente la matriz obtenida al aplicar
+$F_2\leftarrow F_2-3F_1$ a $A$. La operación inversa es
+$F_2\leftarrow F_2+3F_1$ y está representada por
+
+$$
+E^{-1}=
+\begin{bmatrix}
+1&0&0\\
+3&1&0\\
+0&0&1
+\end{bmatrix}.
+$$
+
+En efecto, $E^{-1}E=I_3$: multiplicar por $E^{-1}$ deshace la operación que
+produjo $E$.
 
 ## 5. Forma escalonada y forma escalonada reducida
 
@@ -481,7 +518,7 @@ por encima de los pivotes y termina en la forma escalonada reducida.
 
 ### Teorema 5.4. Existencia y unicidad de la forma reducida
 
-**Enunciado.** Para toda matriz $A$ existe una sucesión de operaciones
+Para toda matriz $A$ existe una sucesión de operaciones
 elementales que la transforma en una matriz escalonada reducida. Además, esa
 matriz reducida es única y se denota por $\operatorname{rref}(A)$.
 
@@ -661,7 +698,7 @@ número de pivotes de $\operatorname{rref}(A)$.
 
 ### Teorema 7.2. Criterio de Rouché–Capelli
 
-**Enunciado.** Sea $A\in\mathbb R^{m\times n}$. El sistema $Ax=b$:
+Sea $A\in\mathbb R^{m\times n}$. El sistema $Ax=b$:
 
 1. tiene solución si, y solo si,
    $\operatorname{rango}(A)=\operatorname{rango}([A\mid b])$;
@@ -711,7 +748,7 @@ Para matrices de tamaños compatibles:
 
 ### Teorema 8.1. Prueba de invertibilidad y cálculo de la inversa
 
-**Enunciado.** Sea $A\in\mathbb R^{n\times n}$. Entonces $A$ es invertible si,
+Sea $A\in\mathbb R^{n\times n}$. Entonces $A$ es invertible si,
 y solo si,
 
 $$

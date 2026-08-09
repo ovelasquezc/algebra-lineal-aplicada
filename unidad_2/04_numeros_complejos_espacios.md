@@ -81,7 +81,7 @@ suma.
 
 ### Proposición 2.1. Estructura de cuerpo de $\mathbb C$
 
-**Enunciado.** Con las operaciones anteriores, $\mathbb C$ es un cuerpo. En
+Con las operaciones anteriores, $\mathbb C$ es un cuerpo. En
 particular:
 
 1. el cero es $0+0i$;
@@ -117,7 +117,7 @@ $$
 
 ### Proposición 3.2. Propiedades básicas
 
-**Enunciado.** Para $z,w\in\mathbb C$:
+Para $z,w\in\mathbb C$:
 
 1. $\overline{z+w}=\overline z+\overline w$;
 2. $\overline{zw}=\overline z\,\overline w$;
@@ -171,7 +171,7 @@ argumentos son $\theta+2k\pi$, con $k\in\mathbb Z$.
 
 ### Teorema 4.1. Fórmula de Euler
 
-**Enunciado.** Para $\theta\in\mathbb R$,
+Para $\theta\in\mathbb R$,
 
 $$
 e^{i\theta}=\cos\theta+i\sin\theta.
@@ -214,7 +214,7 @@ $$
 
 ### Teorema 5.1. Fórmula de De Moivre
 
-**Enunciado.** Para todo entero $n$,
+Para todo entero $n$,
 
 $$
 \boxed{
@@ -244,7 +244,7 @@ $$
 
 ### Teorema 5.3. Raíces $n$-ésimas
 
-**Enunciado.** Sea $z=re^{i\theta}\neq0$ y $n\geq1$. Las soluciones de
+Sea $z=re^{i\theta}\neq0$ y $n\geq1$. Las soluciones de
 $w^n=z$ son exactamente
 
 $$
@@ -286,7 +286,7 @@ Esto no es un caso aislado.
 
 ### Teorema 6.1. Teorema fundamental del álgebra
 
-**Enunciado.** Todo polinomio complejo no constante posee al menos una raíz
+Todo polinomio complejo no constante posee al menos una raíz
 compleja. En consecuencia, si $p$ tiene grado $n\geq1$, existen raíces
 distintas $z_1,\ldots,z_r$ y enteros positivos $m_1,\ldots,m_r$ tales que
 
@@ -304,7 +304,7 @@ polinomio se descompone por completo en factores lineales.
 
 ### Teorema 6.2. Raíces conjugadas de polinomios reales
 
-**Enunciado.** Si $p\in\mathbb R[t]$ y $z\in\mathbb C$, entonces
+Si $p\in\mathbb R[t]$ y $z\in\mathbb C$, entonces
 
 $$
 p(\overline z)=\overline{p(z)}.
@@ -480,7 +480,7 @@ $$
 
 ### Teorema 9.1. Proyección sobre una familia ortonormal compleja
 
-**Enunciado.** Si $(u_1,\ldots,u_r)$ es una familia ortonormal y
+Si $(u_1,\ldots,u_r)$ es una familia ortonormal y
 $W=\operatorname{span}\{u_1,\ldots,u_r\}$, entonces
 
 $$

@@ -60,7 +60,7 @@ También se usa la notación $\operatorname{gen}\{v_1,\ldots,v_r\}$.
 
 ### Proposición 1.4. Pertenencia y sistemas lineales
 
-**Enunciado.** Sea
+Sea
 
 $$
 A=\begin{bmatrix}v_1&\cdots&v_r\end{bmatrix}.
@@ -136,7 +136,7 @@ La solución nula siempre existe. La pregunta es si existen soluciones
 
 ### Teorema 3.2. Caracterización de la dependencia
 
-**Enunciado.** Una familia $v_1,\ldots,v_r$ con $r\geq2$ es linealmente
+Una familia $v_1,\ldots,v_r$ con $r\geq2$ es linealmente
 dependiente si, y solo si, alguno de sus vectores es combinación lineal de los
 otros.
 
@@ -172,7 +172,7 @@ $\square$
 
 ### Corolario 3.3. Añadir un vector redundante
 
-**Enunciado.** Si
+Si
 $w\in\operatorname{span}\{v_1,\ldots,v_r\}$, entonces
 
 $$
@@ -197,7 +197,7 @@ $$
 
 ### Teorema 4.1. Criterio del sistema homogéneo
 
-**Enunciado.** Son equivalentes:
+Son equivalentes:
 
 1. $v_1,\ldots,v_r$ son linealmente independientes;
 2. $A\alpha=0$ tiene solamente la solución $\alpha=0$;
@@ -242,7 +242,7 @@ Las relaciones lineales entre columnas se conservan durante la reducción.
 
 ### Teorema 5.1. Selección mediante columnas pivote
 
-**Enunciado.** Si las columnas pivote de $\operatorname{rref}(A)$ tienen
+Si las columnas pivote de $\operatorname{rref}(A)$ tienen
 índices $j_1,\ldots,j_s$, entonces las columnas **originales**
 
 $$
@@ -329,7 +329,7 @@ $$
 
 ### Proposición 6.2. Vectores ortogonales no nulos
 
-**Enunciado.** Si $v_1,\ldots,v_r$ son no nulos y ortogonales dos a dos,
+Si $v_1,\ldots,v_r$ son no nulos y ortogonales dos a dos,
 entonces son linealmente independientes.
 
 **Prueba.** Suponga
@@ -350,7 +350,7 @@ $\square$
 
 ### Proposición 6.3. Transformaciones invertibles
 
-**Enunciado.** Si $v_1,\ldots,v_r$ son linealmente independientes y $B$ es
+Si $v_1,\ldots,v_r$ son linealmente independientes y $B$ es
 invertible, entonces $Bv_1,\ldots,Bv_r$ son linealmente independientes.
 
 **Prueba.** Si

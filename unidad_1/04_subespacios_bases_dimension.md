@@ -27,7 +27,7 @@ cero.
 
 ### Proposición 1.2. Criterio de combinaciones lineales
 
-**Enunciado.** Para un conjunto no vacío $W\subseteq\mathbb R^n$, son
+Para un conjunto no vacío $W\subseteq\mathbb R^n$, son
 equivalentes:
 
 1. $W$ es un subespacio;
@@ -130,7 +130,7 @@ el caso $Ax=b$, esto ocurre si, y solo si, $b=0$.
 
 ### Proposición 4.1. Intersección
 
-**Enunciado.** Si $U$ y $W$ son subespacios de $\mathbb R^n$, entonces
+Si $U$ y $W$ son subespacios de $\mathbb R^n$, entonces
 $U\cap W$ es un subespacio.
 
 **Prueba.** El vector cero pertenece a ambos conjuntos. Si $u,v\in U\cap W$,
@@ -176,7 +176,7 @@ todo el subespacio.
 
 ### Teorema 5.2. Unicidad de coordenadas
 
-**Enunciado.** Si $\mathcal B=(v_1,\ldots,v_r)$ es una base de $W$, todo
+Si $\mathcal B=(v_1,\ldots,v_r)$ es una base de $W$, todo
 $w\in W$ se expresa de manera única como
 
 $$
@@ -211,7 +211,7 @@ bases se desarrollará en C9.
 
 ### Teorema 6.1. Teorema de la dimensión
 
-**Enunciado.** Todas las bases de un subespacio finito-dimensional tienen la
+Todas las bases de un subespacio finito-dimensional tienen la
 misma cantidad de vectores.
 
 La prueba general usa el lema de intercambio: una familia linealmente
